@@ -1,4 +1,4 @@
-baseurl = "https://jpshuimu.github.io/"  # End your URL with a `/` trailing slash.
+baseurl = "http://www.leoyang.org/"  # End your URL with a `/` trailing slash.
 title = "Leo YANG"
 copyright = "&copy; 2017 Leo YANG"
 theme = "academic"
@@ -9,7 +9,7 @@ footnotereturnlinkcontents = "<sup>^</sup>"
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-101555800-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -27,9 +27,9 @@ defaultContentLanguageInSubdir = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "Pdshuimu@gmail.com"
-  address = "Social Sciences Building, Room 301, UCSD, California, 92093, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "424 355 1283"
+  address = "Social Sciences Building, Room 531, UCSD, California, 92093, USA"
+  office_hours = "Monday 13:00 to 15:00 or email for appointment"
+  phone = "858 405 2327"
   wechat = "Shuimu"
   skype = ""
   telegram = ""
@@ -205,4 +205,18 @@ defaultContentLanguageInSubdir = false
   languageCode = "en-us"
 [languages.zh]
   languageCode = "zh-cn"
+  name = "杨阳"
+  role = "政治学博士生"
+  organization = "加利福尼亚大学圣迭戈分校"
+  organization_url = ""
+  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  email = "Pdshuimu@gmail.com"
+  address = "社会科学大楼531办公室, 拉霍亚, 加利福尼亚, 92093, 美国"
+  office_hours = ""
+  phone = "858 405 2327"
+  wechat = "Shuimu"
+  skype = ""
+  telegram = ""
+
 

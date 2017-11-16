@@ -37,6 +37,4 @@ weight = 1
 
 # Biography
 
-Leo Yang is currently a research assistant in the Division of Social Science, Hong Kong University of Science and Technology. He will join the Ph.D. Program in Political Science at University of California San Diego in Fall, 2017. 
-
-His research intersts include social computation, political economy, and development economy. He is now the reseach fellow of the Institute for Internet Law, Peking Univeristy, and the *Comparative Studies*.
+Leo Yang is a Ph.D. student in Political Science at University of California, San Deigo(UCSD). He was trained as an economist in two different graduate programs (major in Finance and Social Science). His research interests include the social computation, the political economy, and the development economics. He is a research fellow of the Institute for Internet Law, Peking University, and the *Comparative Studies*.

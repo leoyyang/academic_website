@@ -1,6 +1,6 @@
 +++
 abstract = ""
-abstract_short = ""
+abstract_short = "Investigate the relationship between"
 authors = ["Jiajun Lan", "Ying Fang", "Leo Yang"]
 date = "2017-11-16"
 image_preview = ""

@@ -12,7 +12,7 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
-    "Social Computation",
+    "Computational Social Science",
     "Political Economy",
     "Development Economy"
   ]

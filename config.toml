@@ -1,9 +1,12 @@
 baseurl = "http://www.leoyang.org/"  # End your URL with a `/` trailing slash.
-title = "Leo YANG"
-copyright = "&copy; 2017 Leo YANG"
+title = "Leo Y. YANG"
+copyright = "&copy; 2018 Leo Y. YANG"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+paginate = 10
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
@@ -13,22 +16,46 @@ googleAnalytics = "UA-101555800-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
+hasCJKLanguage = true  # Set `true` for Chinese/Japanese/Korean languages.
 defaultContentLanguageInSubdir = false
 
+# Get last modified date for content from Git?
+enableGitInfo = false
 
+[outputs]
+  home = [ "HTML", "CSS", "RSS" ]
+  section = [ "HTML", "RSS" ]
+
+# Configure BlackFriday Markdown rendering.
+#   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
 [blackfriday]
-  hrefTargetBlank = true
+  hrefTargetBlank = true  # `true` opens external links in a new tab.
+  fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
+  smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
 [params]
-  name = "Leo YANG"
+  # Color theme.
+  #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
+  color_theme = "dark"
+
+  # Font style.
+  #   Choose from `default`, `classic`, or `playfair`.
+  font = "default"
+  
+  # Your details.
+  name = "Leo Y. YANG"
   role = "Ph.D. Student in Political Science"
+
+  # Organizations/Affiliations.
+  #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
   organization = "University of California San Diego"
   organization_url = ""
+
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "Pdshuimu@gmail.com"
-  address = "Social Sciences Building, Room 531, UCSD, California, 92093, USA"
-  office_hours = "Monday 13:00 to 15:00 or email for appointment"
+  address = "Social Sciences Building, Room 351, UCSD, California, 92093, USA"
+  office_hours = "Wednesday 9:00 to 10:50 or email for appointment"
   phone = "858 405 2327"
   wechat = "Shuimu"
   skype = ""
@@ -37,9 +64,13 @@ defaultContentLanguageInSubdir = false
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""
 
+  # Discussion link (e.g. link to a forum, mailing list, or chat).
+  #   Uncomment line below to use.
+  #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
+
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "Mon, Jan 2, 2006"
+  date_format = "2006-01-02"
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
@@ -81,7 +112,6 @@ defaultContentLanguageInSubdir = false
   highlight = true
   highlight_languages = []
   # highlight_style = "github"
-  # highlight_version = "9.9.0"
 
   # Enable native social sharing buttons?
   sharing = true
@@ -106,6 +136,22 @@ defaultContentLanguageInSubdir = false
     'Book',  # 5
     'Book chapter'  # 6
   ]
+
+  # Configuration of talk pages.
+  [params.talks]
+    # Show talk time?
+    time = false
+
+  # Configuration of publication pages.
+  [params.publications]
+    # Date format (refer to Go's date format: http://fuckinggodateformat.com )
+    #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+    date_format = "2006-01-02"
+
+  # Configuration of project pages.
+  [params.projects]
+    # List publications and talks related to the project?
+    list_children = true
 
   # Social/Academic Networking
   #
@@ -160,6 +206,9 @@ defaultContentLanguageInSubdir = false
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
+[params.menus]
+  # Align the main menu to the right of the page? (true/false)
+  align_right = true
 
 [[menu.main]]
   name = "Home"
@@ -177,9 +226,14 @@ defaultContentLanguageInSubdir = false
 #   weight = 3
 
 [[menu.main]]
+ name = "Software"
+ url = "#software"
+ weight = 3
+
+[[menu.main]]
  name = "Talks"
  url = "#talks"
- weight = 3
+ weight = 4
 
 # [[menu.main]]
 #  name = "Teaching"
@@ -189,7 +243,7 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 4
+  weight = 5
 
 # Taxonomies.
 [taxonomies]
@@ -212,7 +266,7 @@ defaultContentLanguageInSubdir = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "Pdshuimu@gmail.com"
-  address = "社会科学大楼531办公室, 拉霍亚, 加利福尼亚, 92093, 美国"
+  address = "社会科学大楼351办公室, 拉霍亚, 加利福尼亚, 92093, 美国"
   office_hours = ""
   phone = "858 405 2327"
   wechat = "Shuimu"

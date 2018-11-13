@@ -37,4 +37,4 @@ weight = 1
 
 # Biography
 
-Leo Yang is a Ph.D. student in Political Science at University of California, San Diego(UCSD). He was trained as an economist in two different graduate programs (major in Finance and Social Science). His research interests include the social computation, the political economy, and the development economics. He is a research fellow of the Institute for Internet Law, Peking University, and the *Comparative Studies*.
+Leo Yang is a Ph.D. student in Political Science at University of California, San Diego(UCSD). He was trained as an economist in two different graduate programs (major in Finance and Social Science). His research interests include the computational social science, the political economy, and the development economics. He is a research fellow of the Institute for Internet Law, Peking University, and the *Comparative Studies*.

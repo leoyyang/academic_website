@@ -174,7 +174,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:Pdshuimu@gmail.com"
+    link = "mailto:leoyang@ucsd.edu"
 
   # [[params.social]]
   #   icon = "weixin"

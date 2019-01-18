@@ -53,7 +53,7 @@ enableGitInfo = false
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "Pdshuimu@gmail.com"
+  email = "leoyang@ucsd.edu"
   address = "Social Sciences Building, Room 351, UCSD, California, 92093, USA"
   office_hours = "Wednesday 9:00 to 10:50 or email for appointment"
   phone = "858 405 2327"
@@ -184,7 +184,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "https://twitter.com/jpshuimu"
+    link = "https://twitter.com/yangyang_leo"
 
   [[params.social]]
     icon = "weibo"
@@ -265,7 +265,7 @@ enableGitInfo = false
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "Pdshuimu@gmail.com"
+  email = "leoyang@ucsd.edu"
   address = "社会科学大楼351办公室, 拉霍亚, 加利福尼亚, 92093, 美国"
   office_hours = ""
   phone = "858 405 2327"

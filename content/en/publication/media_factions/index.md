@@ -13,7 +13,7 @@ author_notes:
 # - "Equal contribution"
 - ""
 
-date: "2022-01-08T00:00:00Z"
+date: "2022-05-27T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -26,8 +26,8 @@ publishDate: "2022-01-08T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: Work in Progress
-publication_short: Working Paper
+publication: Forthcoming, Political Science Research and Methods
+publication_short: PSRM
 
 abstract: This paper explores how factional competition shapes local media’s coverage of negative political news. Employing news reports that appeared in Chinese national and local newspapers (2000 - 2014) coupled with data on the networks of elites, we find that local bureaucrats connected to strong national leaders tend to criticize members of weaker factions in politically damaging news reports. These adverse reports indeed harm the promotion prospects of the province leaders reported on in the articles, weakening the already weak factions and expanding the relative power of the strong factions. Our findings suggest that the loyalty-based competitive behaviors of political elites further tilt an already uneven playing field across political factions and facilitate power concentration in China.
 

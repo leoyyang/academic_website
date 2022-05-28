@@ -25,8 +25,8 @@ publishDate: "2022-01-22T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: Work in Progress
-publication_short: Working Paper
+publication: Under Review
+publication_short: Under Review
 
 abstract: Why do autocratic regimes tolerate and even respond actively to media criticisms? Previous research suggested that autocrats did so out of the intentions of collecting the evidence required to hold their subordinates accountable for wrongdoings. In this paper, I propose an alternative explanation and support it with evidence on how local officials were punished for news coverage on scandalous safety accidents. Using a panel on the political turnovers of 1,201 prefecture leaders in China during 2002-2012, I find that, of all 1,816 serious coal mine accidents, even controlling for the number of deaths they caused, only those with exceptionally higher media coverage have the effect of significantly reducing the prospects of local leaders' promotion. This result suggests that the primary goal of media supervision is to portray and promote a positive image of the autocrats rather than to enhance accountability. I further show that punishment is harsher when the news is covered by national party newspapers and regional commercial newspapers, suggesting the importance of power decentralization and media commercialization for effective media supervision in China. Together, these findings deepen our understanding of media supervision in autocracies.
 

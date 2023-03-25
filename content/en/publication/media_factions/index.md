@@ -5,29 +5,30 @@ title: "Do Winners Spread More Words? Factional Competition and Local Media Repo
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Ji Yeon Hong
+- Ji Yeon Hong (University of Michigan)
 - Leo Yang
 
 # Author notes (optional)
 author_notes:
 # - "Equal contribution"
 - ""
+- "Corresponding Author"
 
-date: "2022-05-27T00:00:00Z"
+date: "2022-08-15T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2022-01-08T00:00:00Z"
+publishDate: "2022-08-15T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
 publication: Forthcoming, Political Science Research and Methods
-publication_short: PSRM
+publication_short: Forthcoming, Political Science Research and Methods
 
 abstract: This paper explores how factional competition shapes local media’s coverage of negative political news. Employing news reports that appeared in Chinese national and local newspapers (2000 - 2014) coupled with data on the networks of elites, we find that local bureaucrats connected to strong national leaders tend to criticize members of weaker factions in politically damaging news reports. These adverse reports indeed harm the promotion prospects of the province leaders reported on in the articles, weakening the already weak factions and expanding the relative power of the strong factions. Our findings suggest that the loyalty-based competitive behaviors of political elites further tilt an already uneven playing field across political factions and facilitate power concentration in China.
 
@@ -44,9 +45,9 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_code: ''
-url_dataset: ''
+url_pdf: 'https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D71BBF37956AE561F7875081EEE36F8F/S2049847022000358a.pdf/do-winners-spread-more-words-factional-competition-and-local-media-reports-on-corruption-investigation-in-china.pdf'
+url_code: 'https://doi.org/10.7910/DVN/GLQOTD'
+url_dataset: 'https://doi.org/10.7910/DVN/GLQOTD'
 url_poster: ''
 url_project: ''
 url_slides: ''

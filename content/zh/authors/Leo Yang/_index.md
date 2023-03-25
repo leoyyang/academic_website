@@ -6,7 +6,7 @@ title: 杨阳
 superuser: true
 
 # Role/position/tagline
-role: 政治科学博士候选人
+role: 政治科学博士候选人(计算社会科学专业)
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -14,7 +14,7 @@ organizations:
   url: https://www.ucsd.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: 杨阳是加利福尼亚大学圣迭戈分校政治科学系博士候选人
+bio: 杨阳是加利福尼亚大学圣迭戈分校政治科学系博士候选人(计算社会科学专业)
 
 # Interests to show in About widget
 interests:
@@ -51,7 +51,7 @@ social:
   link: https://www.researchgate.net/profile/Leo_Yang_Yang
 - icon: github
   icon_pack: fab
-  link: https://github.com/jpshuimu
+  link: https://github.com/leoyyang
 # - icon: linkedin
 #   icon_pack: fab
 #   link: https://www.linkedin.com/
@@ -70,6 +70,6 @@ email: ""
 highlight_name: true
 ---
 
-杨阳现为美国加利福尼亚大学圣迭戈分校 (UCSD) 政治系博士候选人。他的研究兴趣主要集中在利用大数据方法解决经济学、社会学、政治学相关议题，着力于社会计算、政治经济学和发展经济学领域。
+杨阳现为美国加利福尼亚大学圣迭戈分校 (UCSD) 政治系博士候选人(计算社会科学专业)。他的研究兴趣主要集中在利用大数据方法解决经济学、社会学、政治学相关议题，着力于社会计算、政治经济学和发展经济学领域。
 
 {{< icon name="download" pack="fas" >}} 下载我的 {{< staticref "uploads/resume_cn.pdf" "newtab" >}}中文简历{{< /staticref >}}.

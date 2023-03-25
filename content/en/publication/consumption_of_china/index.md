@@ -38,7 +38,7 @@ summary: China's online consumer spending is positively correlated with regional
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

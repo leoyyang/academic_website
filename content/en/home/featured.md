@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 80
 
-title: Featured Research
-subtitle: ""
+title: Research
+subtitle: "Peer-Reviewed Articles and Working Papers"
 
 content:
   # Page type to display. E.g. post, talk, publication...
@@ -25,6 +25,7 @@ content:
     tag: ""
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
+
 
 design:
   # Choose a view for the listings:

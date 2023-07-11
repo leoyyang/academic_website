@@ -9,6 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 65
 
+# Activate this widget? true/false
 active: false
 
 title: Projects
@@ -29,10 +30,10 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: Deep Learning
-    tag: Deep Learning
-  - name: Other
-    tag: Demo
+  - name: Media Politics
+    tag: "Media Politics"
+  - name: Labor Market
+    tag: 'Labor Market'
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.

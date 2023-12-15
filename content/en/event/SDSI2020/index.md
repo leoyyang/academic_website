@@ -4,7 +4,7 @@ title: SDSI Data Science Lab
 event: SDSI Data Science Lab
 event_url: https://datascience.stanford.edu/
 
-location: Srandford University
+location: Stanford University
 address:
   street: 450 Serra Mall
   city: Stanford

@@ -6,15 +6,17 @@ title: Leo Y. Yang
 superuser: true
 
 # Role/position/tagline
-role: Ph.D. Candidate in Political Science (with a Specialization in Computational Social Science)
+role: Postdoctoral Scholar
+
+  
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: University of California San Diego
-  url: https://www.ucsd.edu/
+- name: Stanford Center on China's Economy and Institutions (SCCEI)
+  url: https://sccei.fsi.stanford.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Leo Y. Yang is a Ph.D. candidate in Political Science (with a Specialization in Computational Social Science) at the University of California, San Diego (UCSD)
+bio: Leo Y. Yang is a Postdoctoral Scholar at Stanford Center on China's Economy and Institutions (SCCEI)
 
 # Interests to show in About widget
 interests:
@@ -25,6 +27,9 @@ interests:
 # Education to show in About widget
 education:
   courses:
+  - course: Ph.D. in Political Science (with a Specialization in Computational Social Science)
+    institution: University of California San Diego
+    year: 2023
   - course: M.Phil in Social Science
     institution: Hong Kong University of Science and Technology
     year: 2016
@@ -70,6 +75,6 @@ email: ""
 highlight_name: true
 ---
 
-Leo Y. Yang is a Ph.D. candidate in Political Science (with a Specialization in Computational Social Science) at the University of California, San Diego ([UCSD](https://ucsd.edu/)). He is currently the Computational Social Science Fellow of the UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)) and the student researcher of the China Data Lab of the 21st Century China Center ([21CCC](https://china.ucsd.edu/)). His research interests include computational social science, text as data, and development economics. His research focuses on how media (like newspapers and Weibo) influences social and political issues. He is trained as a data scientist who is capable of collecting, cleaning, and using big data to analyze the social phenomenon.
+Leo Y. Yang is a Postdoctoral Scholar at Stanford Center on China's Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)). He received a PhD in Political Science (with a Specialization in Computational Social Science) at the University of California, San Diego ([UCSD](https://ucsd.edu/)) in 2023. He is currently the Computational Social Science Fellow of the UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)). His research interests include computational social science, text as data, and development economics. His research focuses on how media (like newspapers and Weibo) influences social and political issues. He is trained as a data scientist who is capable of collecting, cleaning, and using big data to analyze the social phenomenon.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

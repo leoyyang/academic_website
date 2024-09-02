@@ -6,25 +6,28 @@ title: 杨阳
 superuser: true
 
 # Role/position/tagline
-role: 政治科学博士候选人(计算社会科学专业)
+role: 研究助理教授
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: 加利福尼亚大学圣迭戈分校
-  url: https://www.ucsd.edu/
+- name: 香港浸会大学
+  url: https://aef.hkbu.edu.hk/
 
 # Short bio (displayed in user profile at end of posts)
-bio: 杨阳是加利福尼亚大学圣迭戈分校政治科学系博士候选人(计算社会科学专业)
+bio: 杨阳是香港浸会大学会计经济与金融学系研究助理教授
 
 # Interests to show in About widget
 interests:
-- 计算社会科学
-- 政治经济学
-- 发展经济学
+- 媒体经济学
+- 劳动经济学
+- 教育经济学
 
 # Education to show in About widget
 education:
   courses:
+  - course: 计算社会科学哲学博士
+    institution: 加利福尼亚大学圣迭戈分校
+    year: 2023
   - course: 社会科学哲学硕士
     institution: 香港科技大学
     year: 2016
@@ -70,6 +73,10 @@ email: ""
 highlight_name: true
 ---
 
-杨阳是加州大学圣迭戈分校（UCSD）政治学博士候选人（计算社会科学专长）。目前，他是加州大学全球冲突与合作研究所（IGCC）的计算社会科学研究员，同时也是21世纪中国中心（21CCC）中国数据实验室的学生研究员。他的研究兴趣包括计算社会科学、文本作为数据以及发展经济学。他的研究主要关注媒体（如报纸和微博）如何影响社会和政治问题。文章曾发表于《经济学（季刊）》、《世界经济》、《Political Science Research and Methods》等期刊。
+杨阳是香港浸会大学会计、经济与金融学系的研究助理教授。他的研究主要集中在媒体经济学、劳动经济学和教育经济学领域，特别是对中国的研究。此前，他曾是斯坦福大学中国经济与制度研究中心([SCCEI](https://sccei.fsi.stanford.edu/))的博士后研究员。
 
-{{< icon name="download" pack="fas" >}} 下载我的 {{< staticref "uploads/resume_cn.pdf" "newtab" >}}中文简历{{< /staticref >}}.
+杨阳于2023年获得加州大学圣地亚哥分校([UCSD](https://ucsd.edu/))政治学博士学位（计算社会科学专长）。此外，他还分别于2016年和2014年获得香港科技大学([HKUST](https://hkust.edu.hk/))的社会科学硕士学位和厦门大学([XMU](https://www.xmu.edu.cn/))的金融硕士学位。
+
+此外，杨阳还是斯坦福大学中国经济与制度研究中心([SCCEI](https://sccei.fsi.stanford.edu/))和加州大学全球冲突与合作研究所([IGCC](https://ucigcc.org))的研究员。
+
+{{< icon name="download" pack="fas" >}} 下载我的 {{< staticref "uploads/resume_cn.pdf" "newtab" >}}简历{{< /staticref >}}.

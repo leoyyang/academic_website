@@ -6,23 +6,23 @@ title: Leo Y. Yang
 superuser: true
 
 # Role/position/tagline
-role: Postdoctoral Scholar
+role: Research Assistant Professor
 
   
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford Center on China's Economy and Institutions (SCCEI)
-  url: https://sccei.fsi.stanford.edu/
+- name: Hong Kong Baptist University
+  url: https://aef.hkbu.edu.hk/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Leo Y. Yang is a Postdoctoral Scholar at Stanford Center on China's Economy and Institutions (SCCEI)
+bio: Leo Y. Yang is a Research Assistant Professor in the Department of Accountancy, Economics and Finance at Hong Kong Baptist University
 
 # Interests to show in About widget
 interests:
-- Computational Social Science
-- Text as Data
-- Development Economy
+- Media Economics
+- Labor Economics
+- Education Economics
 
 # Education to show in About widget
 education:
@@ -75,6 +75,10 @@ email: ""
 highlight_name: true
 ---
 
-Leo Y. Yang is a Postdoctoral Scholar at Stanford Center on China's Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)). He received a PhD in Political Science (with a Specialization in Computational Social Science) at the University of California, San Diego ([UCSD](https://ucsd.edu/)) in 2023. He is currently the Computational Social Science Fellow of the UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)). His research interests include computational social science, text as data, and development economics. His research focuses on how media (like newspapers and Weibo) influences social and political issues. He is trained as a data scientist who is capable of collecting, cleaning, and using big data to analyze the social phenomenon.
+I am a Research Assistant Professor in the Department of Accountancy, Economics and Finance at Hong Kong Baptist University. My research focuses on Media Economics, Labor Economics, and Education Economics, with a particular emphasis on China. Previously, I was a Postdoctoral Scholar at the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)).
+
+I hold a Ph.D. in Political Science with a specialization in Computational Social Science from the University of California, San Diego ([UCSD](https://ucsd.edu/)), obtained in 2023. I also earned an MPhil in Social Science from the Hong Kong University of Science and Technology ([HKUST](https://hkust.edu.hk/)) in 2016 and an MA in Finance from Xiamen University ([XMU](https://www.xmu.edu.cn/)) in 2014.
+
+In addition to my current role, I am a faculty affiliate to the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)) and UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)).
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

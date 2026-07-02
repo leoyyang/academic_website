@@ -16,9 +16,6 @@ main:
   - name: Software & Data
     url: '#software'
     weight: 45
-  - name: Job-Tracker
-    url: '#job-tracker'
-    weight: 50
   - name: Data-Insights
     url: '#posts'
     weight: 52

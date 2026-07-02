@@ -13,7 +13,9 @@ title: 'Job Tracker'
 subtitle: 'Real-time monitoring of job postings across major Chinese platforms'
 
 # Activate this widget? true/false
-active: true
+# Deactivated: the Job Market Tracker is now surfaced via the Software & Data
+# section (card links to the standalone /job-tracker/ page).
+active: false
 
 design:
   # Choose how to display the content:

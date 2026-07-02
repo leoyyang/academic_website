@@ -81,54 +81,23 @@
 .home-section:nth-of-type(4) { animation-delay: 0.8s; }
 .home-section:nth-of-type(5) { animation-delay: 1.0s; }
 
-/* Publication 列表动画 - 首页和详情页 */
-.stream-item, .pub-list-item {
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
-}
+/* Publication / 通用卡片：不再在页面加载时自动播放动画，而是交给下面的
+   .animate-on-scroll —— 由 custom.js 的 IntersectionObserver 在卡片滚动进入
+   视口时触发，实现"滑到才淡入"而不是加载就一次性播完。
+   刻意不给卡片预设 opacity:0：隐藏状态只在 custom.js 加了 .animate-on-scroll
+   后才生效，这样即使 JavaScript 未运行，卡片也始终可见。 */
 
-.stream-item:nth-child(1), .pub-list-item:nth-child(1) { animation-delay: 0.1s; }
-.stream-item:nth-child(2), .pub-list-item:nth-child(2) { animation-delay: 0.2s; }
-.stream-item:nth-child(3), .pub-list-item:nth-child(3) { animation-delay: 0.3s; }
-.stream-item:nth-child(4), .pub-list-item:nth-child(4) { animation-delay: 0.4s; }
-.stream-item:nth-child(5), .pub-list-item:nth-child(5) { animation-delay: 0.5s; }
-.stream-item:nth-child(6), .pub-list-item:nth-child(6) { animation-delay: 0.6s; }
-.stream-item:nth-child(7), .pub-list-item:nth-child(7) { animation-delay: 0.7s; }
-.stream-item:nth-child(8), .pub-list-item:nth-child(8) { animation-delay: 0.8s; }
-
-/* 首页特定的publication样式 */
-#featured .stream-item {
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-#featured .stream-item:nth-child(1) { animation-delay: 0.1s; }
-#featured .stream-item:nth-child(2) { animation-delay: 0.2s; }
-#featured .stream-item:nth-child(3) { animation-delay: 0.3s; }
-#featured .stream-item:nth-child(4) { animation-delay: 0.4s; }
-#featured .stream-item:nth-child(5) { animation-delay: 0.5s; }
-
-/* 滚动触发动画类 */
+/* 滚动触发动画类（由 custom.js 加/去 .animate-in） */
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.6s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .animate-on-scroll.animate-in {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* 卡片动画 */
-.card {
-  animation: slideInScale 0.6s ease-out forwards;
-  opacity: 0;
-}
-
-.card:nth-child(1) { animation-delay: 0.1s; }
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.3s; }
 
 /* ===============================================
  * 增强按钮样式

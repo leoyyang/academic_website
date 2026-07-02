@@ -23,6 +23,8 @@ content:
     category: ""
     publication_type: ""
     tag: ""
+    # Only show publications marked `featured: true` (excludes featured:false ones).
+    featured_only: true
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
 

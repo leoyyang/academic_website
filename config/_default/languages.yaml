@@ -29,10 +29,6 @@ zh:
        url: '#software'
        weight: 3
 
-     - name: 招聘监测
-       url: '#job-tracker'
-       weight: 4
-
      - name: 会议
        url: '#talks'
        weight: 5

@@ -23,6 +23,8 @@ content:
     category: ""
     publication_type: ""
     tag: ""
+    # 只显示 featured: true 的论文（排除 featured:false）。
+    featured_only: true
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
 

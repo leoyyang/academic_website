@@ -15,7 +15,19 @@ subtitle:
 content:
   # Automatically link email and phone or display as text?
   autolink: true
-  
+
+  # Contact details — the new theme's contact block reads these from the widget's
+  # `content` (not from params.yaml).
+  email: leoyang@hkbu.edu.hk
+  phone: '+1 (858) 405-2327'
+  address:
+    street: Room 533, Wing Lung Bank Building for Business Studies (WLB), HKBU
+    city: Kowloon Tong
+    region: Kowloon
+    postcode: ''
+    country: Hong Kong
+    country_code: HK
+
   # Email form provider
   # form:
   #   provider: netlify

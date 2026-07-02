@@ -40,14 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
             el.classList.add('animate-on-scroll');
             observer.observe(el);
         });
-
-        // 兜底：2 秒后强制显现仍未显现的元素，防止 observer 边界情况
-        // 导致内容永久卡在 opacity:0。
-        setTimeout(() => {
-            document
-                .querySelectorAll('.animate-on-scroll:not(.animate-in)')
-                .forEach(el => el.classList.add('animate-in'));
-        }, 2000);
+        // 注意：不再做"N 秒后全部强制显现"的兜底——那会在用户滚动到之前
+        // 就把卡片全显示了，滚动进入动画就看不到了。无 JS / 不支持
+        // IntersectionObserver 的降级已在上面处理，卡片默认也不预设 opacity:0。
     }
 
     // ===============================================

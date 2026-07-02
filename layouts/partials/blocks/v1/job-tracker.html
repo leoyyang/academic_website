@@ -9,7 +9,7 @@
   <div class="row">
     <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
       {{ with $block.Title }}
-      <h1 class="mb-0">{{ . | markdownify | emojify }}</h1>
+      <h2 class="mb-0">{{ . | markdownify | emojify }}</h2>
       {{ end }}
       {{ with $block.Params.subtitle }}
       <p class="mt-1">{{ . | markdownify | emojify }}</p>
@@ -34,6 +34,11 @@
         <div class="chart-container">
           <canvas id="jobChart"></canvas>
         </div>
+        {{ if eq site.Language.Lang "zh" }}
+        <p class="job-tracker-note text-muted small mb-0">平台 A–D 为中国主要招聘网站（出于合规考虑匿名标注）。</p>
+        {{ else }}
+        <p class="job-tracker-note text-muted small mb-0">Platforms A–D are major Chinese recruitment sites, shown anonymised.</p>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -220,7 +225,18 @@ async function initializeChart() {
             return;
         }
         console.log('Canvas found:', canvas);
-        
+
+        // Guard: if the chart library failed to load (e.g. the CDN is blocked),
+        // show a friendly message instead of throwing into a blank canvas.
+        if (typeof Chart === 'undefined') {
+            console.error('Chart.js failed to load');
+            const cc = document.querySelector('.chart-container');
+            if (cc) {
+                cc.innerHTML = '<p class="text-muted" style="text-align:center;padding:2rem 1rem;">图表加载失败（脚本可能被拦截），请稍后重试。<br>The chart could not load — please try again later.</p>';
+            }
+            return;
+        }
+
         // Load data
         await loadData();
         console.log('Data loaded:', Object.keys(jobData).length, 'platforms');

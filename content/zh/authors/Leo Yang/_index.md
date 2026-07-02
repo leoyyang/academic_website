@@ -18,9 +18,9 @@ bio: 杨阳是香港浸会大学会计经济与金融学系研究助理教授
 
 # Interests to show in About widget
 interests:
-- 媒体经济学
-- 劳动经济学
-- 教育经济学
+- 数字政治经济学
+- 劳动力市场与制度变迁
+- AI驱动的实证研究基础设施
 
 # Education to show in About widget
 education:
@@ -62,9 +62,9 @@ social:
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
 # and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: uploads/resume.pdf
+- icon: cv
+  icon_pack: ai
+  link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -73,10 +73,10 @@ email: ""
 highlight_name: true
 ---
 
-杨阳是香港浸会大学会计、经济与金融学系的研究助理教授。他的研究主要集中在媒体经济学、劳动经济学和教育经济学领域，特别是对中国的研究。此前，他曾是斯坦福大学中国经济与制度研究中心([SCCEI](https://sccei.fsi.stanford.edu/))的博士后研究员。
+杨阳是香港浸会大学会计、经济与金融学系的研究助理教授。他的研究聚焦于数字化转型的政治经济学，探讨人工智能和大规模数字数据如何重塑劳动力市场、制度动态以及实证知识的生产。他将实质性实证分析与可扩展的AI驱动基础设施开发相结合，以改善数据丰富环境中的测量、透明度和问责制，尤其关注中国。此前，他曾是斯坦福大学中国经济与制度研究中心([SCCEI](https://sccei.fsi.stanford.edu/))的博士后研究员。
 
 杨阳于2023年获得加州大学圣地亚哥分校([UCSD](https://ucsd.edu/))政治学博士学位（计算社会科学专长）。此外，他还分别于2016年和2014年获得香港科技大学([HKUST](https://hkust.edu.hk/))的社会科学硕士学位和厦门大学([XMU](https://www.xmu.edu.cn/))的金融硕士学位。
 
 此外，杨阳还是斯坦福大学中国经济与制度研究中心([SCCEI](https://sccei.fsi.stanford.edu/))和加州大学全球冲突与合作研究所([IGCC](https://ucigcc.org))的研究员。
 
-{{< icon name="download" pack="fas" >}} 下载我的 {{< staticref "uploads/resume_cn.pdf" "newtab" >}}简历{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} 下载我的 {{< staticref "uploads/resume.pdf" "newtab" >}}简历{{< /staticref >}}.

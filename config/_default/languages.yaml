@@ -14,7 +14,7 @@ zh:
  contentDir: content/zh
  title: 杨阳
  params:
-   description: 政治学博士候选人
+   description: 研究助理教授
  menu:
    main:
      - name: 关于
@@ -25,10 +25,14 @@ zh:
        url: '#featured'
        weight: 2
 
-     - name: 会议
-       url: '#talk'
+     - name: 招聘监测
+       url: '#job-tracker'
        weight: 3
 
-     - name: 联系
-       url: '#talk'
+     - name: 会议
+       url: '#talks'
        weight: 4
+
+     - name: 联系
+       url: '#contact'
+       weight: 5

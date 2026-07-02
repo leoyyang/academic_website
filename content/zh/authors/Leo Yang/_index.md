@@ -55,6 +55,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/leoyyang
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=9TNC8YkAAAAJ
 # - icon: linkedin
 #   icon_pack: fab
 #   link: https://www.linkedin.com/

@@ -20,12 +20,12 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: leoyang@hkbu.edu.cn
+email: leoyang@hkbu.edu.hk
 phone: +1 (858) 405-2327
 address:
   street: Room 533, Wing Lung Bank Building for Business Studies (WLB), HKBU
   city: Kowloon Tong
-  region: 
+  region: Kowloon
   postcode: 
   country: Hong Kong
   country_code: HK
@@ -108,7 +108,7 @@ copyright_license:
   allow_commercial: false
   notice: 'This work is licensed under {license}'
 abstract_length: 135
-plugins_js: []
+plugins_js: ['custom']
 avatar:
   gravatar: false
   shape: circle
@@ -158,3 +158,10 @@ cms:
 icon:
   pack:
     ai: true
+
+# HugoBlox (blox-bootstrap v5) reads the Academicons toggle from here, not from
+# `icon.pack.ai`. Enabling it loads the academicons webfont so `ai` icons
+# (e.g. cv, google-scholar) actually render.
+extensions:
+  academicons:
+    enable: true

@@ -25,14 +25,18 @@ zh:
        url: '#featured'
        weight: 2
 
+     - name: 软件与数据
+       url: '#software'
+       weight: 3
+
      - name: 招聘监测
        url: '#job-tracker'
-       weight: 3
+       weight: 4
 
      - name: 会议
        url: '#talks'
-       weight: 4
+       weight: 5
 
      - name: 联系
        url: '#contact'
-       weight: 5
+       weight: 6

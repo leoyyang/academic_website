@@ -13,6 +13,9 @@ main:
   - name: Research
     url: '#featured'
     weight: 40
+  - name: Software & Data
+    url: '#software'
+    weight: 45
   - name: Job-Tracker
     url: '#job-tracker'
     weight: 50

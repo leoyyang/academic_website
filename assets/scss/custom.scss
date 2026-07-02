@@ -206,7 +206,7 @@ body.dark .publication-card:hover {
 /* Publication标题 */
 .publication-title {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
   margin-bottom: 0.5rem;
   color: #2c3e50;
@@ -295,21 +295,18 @@ body.dark .publication-separator {
 
 /* Publication摘要 */
 .publication-abstract {
-  font-size: 0.85rem;
-  line-height: 1.4;
+  font-size: 0.9rem;
+  line-height: 1.55;
   color: #555555;
   margin-bottom: 0.3rem;
   text-align: left;
   max-width: 72ch;
 }
 
-/* Homepage Research list: truncate abstracts to a scannable 4-line preview
-   (full abstracts remain on the publication list/detail pages). */
+/* Homepage Research list: show the FULL abstract (no truncation) and let it
+   fill the wide content column, so each card reads like a complete entry. */
 .home-section .publication-abstract {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  max-width: none;
 }
 
 [data-theme="dark"] .publication-abstract,
@@ -1248,4 +1245,118 @@ body.dark .podcast-player {
     opacity: 1 !important;
     transform: none !important;
   }
-} 
+}
+
+/* ===============================================
+ * Software & Data 卡片（工具/数据展示，仿 Yiqing 等高卡片）
+ * =============================================== */
+.software-data-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.software-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-top: 3px solid #c62828;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.software-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.software-card-tagline {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #c62828;
+  margin-bottom: 0.4rem;
+}
+
+.software-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.25;
+  margin-bottom: 0.6rem;
+}
+
+.software-card-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.software-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.software-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 0.85rem;
+  min-height: 38px;
+  border: 1.5px solid #c62828;
+  border-radius: 999px;
+  color: #c62828;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.software-btn:hover {
+  background: #c62828;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* 深色模式 */
+.dark .software-card,
+body.dark .software-card {
+  background: #1e1e1e;
+  border-color: #404040;
+  border-top-color: #ff6b6b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark .software-card:hover,
+body.dark .software-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.dark .software-card-tagline,
+body.dark .software-card-tagline { color: #ff8a8a; }
+
+.dark .software-card-title,
+body.dark .software-card-title { color: #f3f4f6; }
+
+.dark .software-card-desc,
+body.dark .software-card-desc { color: #cbd5e1; }
+
+.dark .software-data-subtitle,
+body.dark .software-data-subtitle { color: #9ca3af; }
+
+.dark .software-btn,
+body.dark .software-btn {
+  border-color: #ff8a8a;
+  color: #ff8a8a;
+}
+
+.dark .software-btn:hover,
+body.dark .software-btn:hover {
+  background: #ff8a8a;
+  color: #1e1e1e;
+}
+ 

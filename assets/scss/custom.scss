@@ -88,16 +88,28 @@
    后才生效，这样即使 JavaScript 未运行，卡片也始终可见。 */
 
 /* 滚动触发动画类（由 custom.js 加/去 .animate-in） */
+/* 用 keyframe 关键帧动画实现滚动淡入，而不是 transition：
+   因为 .publication-card 上有 `transition: all .3s`（用于 hover），会覆盖
+   同优先级的 transition，把淡入压回 0.3s —— 这就是改 transition 时长
+   看不到变化的原因。keyframe 不受 transition 影响，2s 才真正生效。
+   拆成两段：淡入用 forwards 保持 opacity:1；位移不用 forwards，
+   动画结束后 transform 归位，从而不干扰卡片 hover 的上移。 */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(30px);
-  /* Yiqing-speed: ~2s slow, gentle fade-up (his AOS uses 2–3s). */
-  transition: opacity 2s ease-out, transform 2s ease-out;
 }
 
 .animate-on-scroll.animate-in {
-  opacity: 1;
-  transform: translateY(0);
+  animation: wcRevealFade 2s ease-out forwards, wcRevealRise 2s ease-out;
+}
+
+@keyframes wcRevealFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes wcRevealRise {
+  from { transform: translateY(24px); }
+  to { transform: translateY(0); }
 }
 
 /* ===============================================

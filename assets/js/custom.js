@@ -22,16 +22,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const observer = new IntersectionObserver((entries) => {
+            // 同一批越过触发线的卡片逐张错峰显现（每张差 140ms），
+            // 这样即使几张同时进入视口，也是"一张一张"淡入，而不是一起闪。
+            let staggerIndex = 0;
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
+                    const el = entry.target;
+                    setTimeout(() => el.classList.add('animate-in'), staggerIndex * 140);
+                    staggerIndex++;
                     // 为了性能，一旦动画触发就停止观察
-                    observer.unobserve(entry.target);
+                    observer.unobserve(el);
                 }
             });
         }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
         });
 
         // 观察所有需要动画的元素

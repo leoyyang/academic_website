@@ -18,7 +18,6 @@ content:
 
   # 联系方式——新主题的 contact 区块从这里的 content 读取（不再读 params.yaml）。
   email: leoyang@hkbu.edu.hk
-  phone: '+1 (858) 405-2327'
   address:
     street: Room 533, Wing Lung Bank Building for Business Studies (WLB), HKBU
     city: Kowloon Tong

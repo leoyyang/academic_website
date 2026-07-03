@@ -1,32 +1,36 @@
 {{/* Software & Data block (Hugo Blox block API). */}}
-{{/* Shows the tools/datasets from the section front matter (.Params.tools) */}}
-{{/* as equal-height cards. The parse_block_v1 wrapper already provides the */}}
-{{/* <section class="home-section"> and .container. */}}
+{{/* Renders with the standard section layout — heading in the left column,   */}}
+{{/* tools as a vertical list of cards in the right column — so it matches the */}}
+{{/* Research / Talks / Contact sections for a consistent page rhythm.        */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
 
-<div class="software-data">
-  <div class="section-heading mb-4">
-    {{ with $block.Title }}<h2 class="mb-1">{{ . | markdownify | emojify }}</h2>{{ end }}
-    {{ with $block.Params.subtitle }}<p class="software-data-subtitle mb-0">{{ . | markdownify | emojify }}</p>{{ end }}
+<div class="row">
+  <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+    {{ with $block.Title }}<h2 class="mb-0">{{ . | markdownify | emojify }}</h2>{{ end }}
+    {{ with $block.Params.subtitle }}<p class="mt-1">{{ . | markdownify | emojify }}</p>{{ end }}
   </div>
 
-  <div class="row">
-    {{ range $block.Params.tools }}
-    <div class="col-12 col-md-4 mb-4 d-flex">
-      <article class="software-card d-flex flex-column w-100">
-        {{ with .tagline }}<div class="software-card-tagline">{{ . | emojify }}</div>{{ end }}
-        <h3 class="software-card-title">{{ .name | markdownify | emojify }}</h3>
-        <p class="software-card-desc">{{ .desc | markdownify }}</p>
-        <div class="software-card-links mt-auto">
-          {{ range .links }}
+  <div class="col-12 col-lg-8">
+    <div class="software-list">
+      {{ range $block.Params.tools }}
+      <article class="software-card">
+        <div class="software-card-main">
+          {{ with .tagline }}<div class="software-card-tagline">{{ . | emojify }}</div>{{ end }}
+          <h3 class="software-card-title">{{ .name | markdownify | emojify }}</h3>
+          <p class="software-card-desc">{{ .desc | markdownify }}</p>
+        </div>
+        {{ with .links }}
+        <div class="software-card-links">
+          {{ range . }}
           <a class="software-btn" href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>
             {{ if .icon }}<i class="{{ .icon_pack | default "fas" }} fa-{{ .icon }}" aria-hidden="true"></i> {{ end }}{{ .name }}
           </a>
           {{ end }}
         </div>
+        {{ end }}
       </article>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
 </div>

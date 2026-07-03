@@ -803,6 +803,31 @@ body.dark .research-tab.active::after {
   margin-bottom: 2rem !important; /* 减少标题下方间距 */
 }
 
+/* 全站统一的红色点缀：每个区块标题 h2 下方一道细红短线。
+   在移动端居中（标题也居中），在 lg 及以上左对齐（标题左对齐）。 */
+.home-section .section-heading h2 {
+  position: relative;
+}
+.home-section .section-heading h2::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 3px;
+  margin: 0.55rem auto 0;
+  background: #c62828;
+  border-radius: 2px;
+}
+@media (min-width: 992px) {
+  .home-section .section-heading h2::after {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+.dark .home-section .section-heading h2::after,
+body.dark .home-section .section-heading h2::after {
+  background: #ff6b6b;
+}
+
 /* 减少publication cards之间的间距 */
 .publication-card {
   margin-bottom: 1.5rem !important; /* 恢复原来的间距 */
@@ -1237,14 +1262,32 @@ body.dark .podcast-player {
   font-size: 0.95rem;
 }
 
+/* 右栏工具竖向列表（对齐 Research 的列表节奏） */
+.software-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+/* 每个工具是一张横向卡片：左侧文字块，右侧按钮；窄屏自动换行堆叠 */
 .software-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem 1.5rem;
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-top: 3px solid #c62828;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1.25rem 1.4rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.software-card-main {
+  flex: 1 1 320px;
+  min-width: 0;
 }
 
 .software-card:hover {
@@ -1270,13 +1313,14 @@ body.dark .podcast-player {
 }
 
 .software-card-desc {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   line-height: 1.55;
   color: #4b5563;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .software-card-links {
+  flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;

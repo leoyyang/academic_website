@@ -91,7 +91,8 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 1.1s ease-out, transform 1.1s ease-out;
+  /* Yiqing-speed: ~2s slow, gentle fade-up (his AOS uses 2–3s). */
+  transition: opacity 2s ease-out, transform 2s ease-out;
 }
 
 .animate-on-scroll.animate-in {

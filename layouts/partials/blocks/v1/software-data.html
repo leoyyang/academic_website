@@ -16,10 +16,9 @@
       {{ range $block.Params.tools }}
       <article class="software-card">
         {{ with .logo }}{{ with resources.Get (printf "media/software/%s.svg" .) }}<div class="software-card-logo" aria-hidden="true">{{ .Content | safeHTML }}</div>{{ end }}{{ end }}
-        <div class="software-card-main">
+        <div class="software-card-head">
           {{ with .tagline }}<div class="software-card-tagline">{{ . | emojify }}</div>{{ end }}
           <h3 class="software-card-title">{{ .name | markdownify | emojify }}</h3>
-          <p class="software-card-desc">{{ .desc | markdownify }}</p>
         </div>
         {{ with .links }}
         <div class="software-card-links">
@@ -30,6 +29,7 @@
           {{ end }}
         </div>
         {{ end }}
+        <p class="software-card-desc">{{ .desc | markdownify }}</p>
       </article>
       {{ end }}
     </div>

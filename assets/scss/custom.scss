@@ -873,6 +873,29 @@ body.dark #profile .portrait-title h3 a:hover {
   color: #ff8a8a;
 }
 
+/* 头像下的社交图标：深色模式用白色做中性衬托（替代主题默认蓝，避免蓝色在
+   红色主题里显得突兀），红色只留给单位名等做强调；hover 时转红呼应主题。
+   浅色模式（当前站点为纯深色，一般不触发）回退到中性深灰以免白字看不见。 */
+#profile .network-icon a,
+#profile .network-icon a .big-icon {
+  color: #444444;
+  transition: color 0.2s ease;
+}
+.dark #profile .network-icon a,
+body.dark #profile .network-icon a,
+.dark #profile .network-icon a .big-icon,
+body.dark #profile .network-icon a .big-icon {
+  color: #ffffff;
+}
+#profile .network-icon a:hover,
+#profile .network-icon a:hover .big-icon,
+.dark #profile .network-icon a:hover,
+body.dark #profile .network-icon a:hover,
+.dark #profile .network-icon a:hover .big-icon,
+body.dark #profile .network-icon a:hover .big-icon {
+  color: #ff8a8a;
+}
+
 /* 卡片间距：缩小以贴近 Yiqing 的紧凑观感（原 1.5rem≈31.5px 偏大）。 */
 .publication-card {
   margin-bottom: 0.9rem !important;

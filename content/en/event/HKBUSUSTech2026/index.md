@@ -1,5 +1,5 @@
 ---
-title: Interpretable Discriminative Text Representations via Agreement and Label Disentanglement
+title: HKBU-SUSTech Joint Summer Workshop on Information Systems
 event: HKBU-SUSTech Joint Summer Workshop on Information Systems 2026
 event_url: https://www.paperfox.ai/conference/hkbusustech2026
 
@@ -11,9 +11,11 @@ address:
   postcode: ""
   country: Hong Kong
 
-summary: Invited talk at the HKBU-SUSTech Joint Summer Workshop on our LLM-assisted method for building interpretable, auditable text representations.
+summary: Invited talk presenting "Interpretable Discriminative Text Representations via Agreement and Label Disentanglement" at the HKBU-SUSTech Joint Summer Workshop on Information Systems.
 abstract: >-
-  This talk introduces an operational criterion for interpretable discriminative text
+  I will present "Interpretable Discriminative Text Representations via Agreement and Label
+  Disentanglement" (joint work with Tong Wang and Yiqing Xu). The paper introduces an
+  operational criterion for interpretable discriminative text
   representations — conceptual clarity, measured by chance-adjusted agreement between
   independent annotators applying a feature definition, and label disentanglement, meaning a
   feature should not merely paraphrase the prediction target. We instantiate the criterion in
@@ -56,8 +58,8 @@ projects: []
 
 Invited to the **HKBU-SUSTech Joint Summer Workshop on Information Systems 2026** (theme:
 *Future Forward: AI-Driven Business Research*), hosted at Hong Kong Baptist University, I will
-present our accepted paper on interpretable, auditable text representations — joint work with
-Tong Wang and Yiqing Xu.
+present our accepted paper, *"Interpretable Discriminative Text Representations via Agreement
+and Label Disentanglement,"* — joint work with Tong Wang and Yiqing Xu.
 
 ## Talk overview
 

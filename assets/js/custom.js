@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function initScrollAnimations() {
         const animateElements = document.querySelectorAll(
-            '.pub-list-item, .card, .stream-item'
+            '.pub-list-item, .card, .stream-item, .software-card'
         );
 
         // 若浏览器不支持 IntersectionObserver，直接让内容全部可见，

@@ -17,6 +17,7 @@ active: true
 # The tools/datasets shown as cards.
 tools:
   - name: ReproAI
+    logo: reproai
     tagline: AI plugin · Reproducibility
     desc: "An author-facing AI plugin that helps you build a cleaner, more reproducible replication package before submission — so a journal's data editor can reproduce your results with less friction. Works with Claude Code and OpenAI Codex."
     links:
@@ -30,6 +31,7 @@ tools:
         icon: github
 
   - name: China Gazetteer
+    logo: gazetteer
     tagline: Full-text data · China
     desc: "The China Modern Gazetteer Full-Text Database: 3,000+ county gazetteers compiled since 1949, with full-text search, digitised and verified tables, and AI-powered meta-research to generate structured data at scale."
     links:
@@ -39,6 +41,7 @@ tools:
         icon: globe
 
   - name: Chinese Job Market Tracker
+    logo: tracker
     tagline: Live dashboard · Labor market
     desc: "A self-built dashboard tracking daily job postings across the major Chinese recruitment platforms — a real-time view of labor-market dynamics for research."
     links:

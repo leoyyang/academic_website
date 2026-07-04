@@ -1421,6 +1421,18 @@ body.dark .podcast-player {
   flex: 1 1 320px;
   min-width: 0;
 }
+/* Software 卡片左侧 logo 方块（46px，统一红色圆角图标） */
+.software-card-logo {
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  line-height: 0;
+}
+.software-card-logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
 .software-card:hover {
   transform: translateY(-4px);

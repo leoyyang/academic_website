@@ -1403,17 +1403,18 @@ body.dark .podcast-player {
 
 /* 每个工具是一张横向卡片：左侧文字块，右侧按钮；窄屏自动换行堆叠 */
 /* 网格布局：
-   行1  [logo] [标签+标题]      [按钮竖排]
-   行2  [描述 通栏，从最左开始]   [按钮(跨两行)]
-   —— logo 顶部对齐、不缩进正文；描述从卡片最左开始；按钮竖排靠右、统一宽度。 */
+   行1  [ headrow：logo(与"标签+标题"块等高的正方形) + 标签/标题 ]   [按钮竖排]
+   行2  [ 描述，从卡片最左开始 ]                                    [按钮(跨两行)]
+   —— logo 是正方形、拉伸到与"标签+标题"块等高，二者等高并排、填满左侧空间；
+      描述在下方从最左开始，不被 logo 缩进；按钮竖排靠右、跨两行、统一宽度。 */
 .software-card {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   grid-template-areas:
-    "logo head buttons"
-    "desc desc buttons";
-  column-gap: 1rem;
-  row-gap: 0.5rem;
+    "headrow buttons"
+    "desc    buttons";
+  column-gap: 1.25rem;
+  row-gap: 0.7rem;
   align-items: start;
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -1424,15 +1425,23 @@ body.dark .podcast-player {
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.software-card-head {
-  grid-area: head;
+/* logo + 标签/标题 并排一行；logo 拉伸到与标题块等高 */
+.software-card-headrow {
+  grid-area: headrow;
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
   min-width: 0;
 }
-/* 左上角 logo 方块（46px，统一红色圆角图标） */
+.software-card-head {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+/* logo 方块：高度 = "标签+标题"块高度，宽=高（正方形，来自 viewBox 1:1） */
 .software-card-logo {
-  grid-area: logo;
-  width: 46px;
-  height: 46px;
+  flex: 0 0 auto;
+  width: 50px;
+  height: 50px;
   line-height: 0;
 }
 .software-card-logo svg {
@@ -1452,14 +1461,16 @@ body.dark .podcast-player {
   text-transform: uppercase;
   font-weight: 600;
   color: #c62828;
-  margin-bottom: 0.35rem;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
 }
 
 .software-card-title {
   font-size: 22px;
   font-weight: 700;
   color: #1f2937;
-  line-height: 1.25;
+  line-height: 1.15;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -1506,14 +1517,14 @@ body.dark .podcast-player {
   text-decoration: none;
 }
 
-/* 窄屏：logo+标题一行，描述通栏，按钮改横排在下方 */
+/* 窄屏：headrow(logo+标题) 一行，描述其下，按钮改横排在最下方 */
 @media (max-width: 640px) {
   .software-card {
-    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "logo head"
-      "desc desc"
-      "buttons buttons";
+      "headrow"
+      "desc"
+      "buttons";
     row-gap: 0.8rem;
   }
   .software-card-links {

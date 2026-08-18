@@ -1,5 +1,5 @@
 ---
-title: "Scaling Reproducibility (LLMSS 2026, accepted)"
+title: First Annual Conference on AI, Large Language Models, and the Social Sciences (LLMSS 2026)
 event: First Annual Conference on AI, Large Language Models, and the Social Sciences (LLMSS 2026)
 event_url: https://www.eps-academic.org/ai-conference
 

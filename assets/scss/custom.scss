@@ -319,8 +319,10 @@ body.dark .publication-abstract {
   font-weight: 500;
   transition: all 0.3s ease;
   text-decoration: none;
-  display: inline-flex;
+  display: inline-flex !important;   /* 压过 `.stream-item .btn { display:inline-block }`，作为弹性子项解析为 flex，恢复垂直居中 */
   align-items: center;
+  justify-content: center;           /* 文字/图标同时水平居中，与 .software-btn 一致 */
+  line-height: 1;                    /* 去掉此前 0.9 的紧行高 */
   gap: 0.3rem;
   /* 红色点缀：论文按钮改为 crimson 描边（覆盖 Bootstrap 的蓝色 btn-outline-primary，
      与它同优先级故需 !important），与 Software 卡片按钮、全站红色强调统一。 */

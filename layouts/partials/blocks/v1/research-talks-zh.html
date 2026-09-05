@@ -1,0 +1,8 @@
+{{ $events := (where site.RegularPages "Section" "event").ByDate }}
+{{ $count := .wcBlock.Params.content.count | default 5 }}
+<div class="section-topline"><div><h2>{{ .wcBlock.Title }}</h2></div><a class="section-link" href="{{ "/event/" | relLangURL }}">全部会议演讲 <span aria-hidden="true">→</span></a></div>
+{{ range slice (dict "title" "即将举行" "class" "upcoming" "pages" (first $count (where $events "Date" "ge" now))) (dict "title" "过往演讲" "class" "recent" "pages" (first $count (where $events "Date" "lt" now).Reverse)) }}
+{{ if .pages }}<div class="talk-group talk-{{ .class }}"><h3 class="eyebrow">{{ .title }}</h3><div>
+{{ range .pages }}<article class="talk-row"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ partial "functions/get_event_dates" . }}</time><div><h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4><p>{{ .Params.location }}{{ with .Params.address }}{{ $place := slice }}{{ with .city }}{{ $place = $place | append . }}{{ end }}{{ with .country }}{{ $place = $place | append . }}{{ end }}{{ with $place }} <span class="talk-place">· {{ delimit . ", " }}</span>{{ end }}{{ end }}</p>
+{{ if or .Params.links .Params.url_slides .Params.url_video }}<div class="paper-links">{{ range .Params.links }}<a class="resource-link" href="{{ .url }}">{{ partial "english/resource-icon.html" . }}{{ .name }}</a>{{ end }}{{ with .Params.url_slides }}<a class="resource-link" href="{{ . }}">幻灯片</a>{{ end }}{{ with .Params.url_video }}<a class="resource-link" href="{{ . }}">视频</a>{{ end }}</div>{{ end }}</div></article>{{ end }}
+</div></div>{{ end }}{{ end }}

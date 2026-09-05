@@ -1,5 +1,10 @@
 ---
 title: "Exploring 500 Million Online Job Postings: An Introduction to Data and Methods"
+preview_image: fig_4.png
+preview_crop: [40, 370, 1000, 490]
+preview_alt: "Annual recruitment totals in the source job-posting data, 2015–2022"
+short_title: "Inside 500 million job postings"
+deck: "How we standardize job titles and build a database for studying China’s labor market."
 subtitle: 
 
 # Summary for listings and search engines

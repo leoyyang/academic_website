@@ -1,5 +1,8 @@
 ---
 title: "Preparing for Rain: An Analysis of Mainland China's Dependence on Imports of Taiwanese Products"
+preview_alt: "Map of mainland firms exposed to Taiwanese import supply chains"
+short_title: "Supply chains across the Taiwan Strait"
+deck: "Mapping mainland industries’ dependence on Taiwanese imports and the risks of disruption."
 subtitle: 
 
 # Summary for listings and search engines

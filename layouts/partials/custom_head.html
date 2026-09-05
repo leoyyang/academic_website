@@ -1,0 +1,6 @@
+{{ if in (slice "en" "zh") .Language.Lang }}
+  <link rel="preload" href="/fonts/english/manrope-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/english/newsreader-400.ttf" as="font" type="font/ttf" crossorigin>
+  {{ $style := resources.Get "scss/english.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ end }}

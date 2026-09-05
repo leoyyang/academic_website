@@ -1,7 +1,7 @@
 ---
 # An instance of the Featured widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: featured
+widget: research-list
 
 # This file represents a page section.
 headless: true
@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 80
 
-title: Research
-subtitle: ""
+title: "Research"
+subtitle: "Recent work on labor markets, political information, and research methods."
 
 content:
   # Page type to display. E.g. post, talk, publication...

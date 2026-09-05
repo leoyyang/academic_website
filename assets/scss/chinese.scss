@@ -1,0 +1,49 @@
+// Shared components, with Chinese typography and room for the existing full biography.
+html[lang^="zh"] {
+  body { font-family: 'Manrope', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+  h1, h2, h3, h4 { letter-spacing: 0; }
+  .intro-heading h1, .intro-research h2, .section-topline h1, .section-topline h2,
+  .paper-row h3, .paper-detail h1, .research-tool h3 {
+    font-family: 'Newsreader', 'Songti SC', STSong, serif;
+    letter-spacing: 0; line-height: 1.45;
+  }
+  .intro-heading h1 { font-size: 66px; line-height: 1.2; }
+  .intro-research h2 { font-size: 30px; margin-bottom: 16px; }
+  .zh-biography { font-size: 15px; line-height: 1.95; }
+  .zh-biography p { margin-bottom: 16px; }
+  .intro-role { line-height: 1.9; }
+  #featured .paper-row h3, .research-index .paper-row h3 { font-family: 'Newsreader', 'Songti SC', STSong, serif; font-size: 23px; letter-spacing: 0; line-height: 1.5; }
+  .research-years--paired { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+  .research-years--paired .year-group { display: flex; flex-direction: column; gap: 14px; padding-top: 4px; }
+  .research-years--paired .research-year { padding-top: 0; }
+  .research-years--paired .year-papers { grid-template-columns: minmax(0,1fr); flex: 1; }
+  .research-years--paired:has(details[open]) { align-items: start; }
+  .paper-meta { line-height: 1.85; }
+  .paper-summary, .paper-abstract > div, .full-abstract { line-height: 1.95; }
+  .zh-profile-facts { grid-template-columns: minmax(0,1fr) minmax(0,1.5fr); gap: 40px; }
+  .zh-profile-facts h2 { font-family: inherit; font-size: 15px; font-weight: 700; margin: 0 0 16px; }
+  .zh-profile-facts ul { list-style: none; padding: 0; margin: 0; font-size: 13px; }
+  .zh-profile-facts li { margin: 0 0 12px; line-height: 1.8; }
+  .zh-profile-facts li:last-child { margin-bottom: 0; }
+  .zh-profile-facts section:last-child li { display: grid; grid-template-columns: 40px minmax(0,1fr); gap: 14px; }
+  .zh-profile-facts strong { font-weight: 600; }
+  .zh-profile-facts li div span { display: block; color: var(--muted); }
+  .education-year { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .tool-heading .eyebrow, .talk-group > h3 { letter-spacing: .04em; }
+  .research-tool h3 { line-height: 1.5; }
+  .section-topline > div > p { font-size: 14px; line-height: 1.8; color: var(--muted); margin: 12px 0 0; }
+  .talk-row time { white-space: normal; font-size: 12px; line-height: 1.7; }
+  @media (min-width: 768px) {
+    #featured .research-years--paired .paper-heading { flex: 1; }
+    #featured .research-years--paired:has(details[open]) .paper-heading { flex: none; }
+  }
+  @media (max-width: 767px) {
+    .intro-heading h1 { font-size: 44px; }
+    .intro-research h2 { font-size: 26px; }
+    .zh-profile-facts { display: grid; grid-template-columns: 1fr; gap: 28px; }
+    #featured .paper-row h3, .research-index .paper-row h3 { font-size: 21px; }
+    .research-years--paired { grid-template-columns: minmax(0,1fr); gap: 28px; }
+    .section-topline h2 { font-size: 30px; }
+    .section-link { font-size: 12px; }
+  }
+}

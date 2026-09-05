@@ -12,7 +12,7 @@ address:
   postcode:
   country: Hong Kong
 
-summary: An example talk using Wowchemy's Markdown slides feature.
+summary: Presented at the Chinese Historical Databases Meeting at HKUST.
 abstract: ""
 
 # Talk start and end times.
@@ -24,8 +24,10 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: "2024-01-01T00:00:00Z"
 
-authors: []
-tags: []
+authors:
+  - Leo Y. Yang
+tags:
+  - seminar
 
 # Is this a featured talk? (true/false)
 featured: false
@@ -34,11 +36,7 @@ image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+links: []
 url_code: ""
 url_pdf: ""
 url_slides: ""

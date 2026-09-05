@@ -1,6 +1,6 @@
 ---
 # Software & Data widget.
-widget: software-data
+widget: research-tools
 
 # This file represents a page section.
 headless: true

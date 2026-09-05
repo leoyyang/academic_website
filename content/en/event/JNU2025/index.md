@@ -19,7 +19,7 @@ abstract: >-
 
 date: "2025-10-22T00:00:00+08:00"
 date_end: "2025-10-22T23:59:59+08:00"
-all_day: false
+all_day: true
 
 publishDate: "2025-10-24T17:06:44+08:00"
 

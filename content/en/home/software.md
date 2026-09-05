@@ -1,6 +1,6 @@
 ---
 # Software & Data widget.
-widget: software-data
+widget: research-tools
 
 # This file represents a page section.
 headless: true
@@ -8,8 +8,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 82
 
-title: Software & Data
-subtitle: "Open tools and datasets I build for large-scale, AI-assisted research on China"
+title: "Software & Data"
+subtitle: "Research software and data resources"
 
 # Activate this widget? true/false
 active: true
@@ -17,6 +17,8 @@ active: true
 # The tools/datasets shown as cards.
 tools:
   - name: ReproAI
+    access: Open source
+    related: ai_reproducibility
     logo: reproai
     tagline: AI plugin · Reproducibility
     desc: "An author-facing AI plugin that helps you build a cleaner, more reproducible replication package before submission — so a journal's data editor can reproduce your results with less friction. Works with Claude Code and OpenAI Codex."
@@ -31,6 +33,7 @@ tools:
         icon: github
 
   - name: China Gazetteer
+    access: Online database
     logo: gazetteer
     tagline: Full-text data · China
     desc: "The China Modern Gazetteer Full-Text Database: 3,000+ county gazetteers compiled since 1949, with full-text search, digitised and verified tables, and AI-powered meta-research to generate structured data at scale."
@@ -41,9 +44,11 @@ tools:
         icon: globe
 
   - name: Chinese Job Market Tracker
+    access: Public dashboard · Raw data on request
+    related: job_ads_pulse
     logo: tracker
     tagline: Live dashboard · Labor market
-    desc: "A self-built dashboard tracking daily job postings across the major Chinese recruitment platforms — a real-time view of labor-market dynamics for research."
+    desc: "Daily observations of job postings across major Chinese recruitment platforms. Explore trends and check the latest available data."
     links:
       - name: Open tracker
         url: "/job-tracker/"

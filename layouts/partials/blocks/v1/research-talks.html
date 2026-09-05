@@ -1,0 +1,10 @@
+{{ if eq site.Language.Lang "zh" }}
+{{ partial "blocks/v1/research-talks-zh.html" . }}
+{{ else }}
+{{ $events := (where site.RegularPages "Section" "event").ByDate }}
+<div class="section-topline"><div><h2>Talks</h2></div><a class="section-link" href="/event/">All talks <span aria-hidden="true">→</span></a></div>
+{{ range slice (dict "title" "Upcoming" "pages" (first 2 (where $events "Date" "ge" now))) (dict "title" "Recent" "pages" (first 3 (where $events "Date" "lt" now).Reverse)) }}
+{{ if .pages }}<div class="talk-group talk-{{ lower .title }}"><h3 class="eyebrow">{{ .title }}</h3><div>{{ range .pages }}<article class="talk-row"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time><div><h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4><p>{{ .Params.location }}{{ with .Params.address }}{{ $place := slice }}{{ with .city }}{{ $place = $place | append . }}{{ end }}{{ with .country }}{{ $place = $place | append . }}{{ end }}{{ with $place }} <span class="talk-place">· {{ delimit . ", " }}</span>{{ end }}{{ end }}</p>{{ if or .Params.url_slides .Params.url_video }}<div class="paper-links">{{ with .Params.url_slides }}<a class="resource-link" href="{{ . }}">Slides</a>{{ end }}{{ with .Params.url_video }}<a class="resource-link" href="{{ . }}">Video</a>{{ end }}</div>{{ end }}</div></article>{{ end }}</div></div>{{ end }}
+{{ end }}
+
+{{ end }}

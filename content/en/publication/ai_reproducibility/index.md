@@ -29,18 +29,37 @@ publication_types: ["3"]
 # publication: Working Paper
 # publication_short: Working Paper
 
-abstract: Reproducibility is central to research credibility, yet large-scale reanalysis of empirical data remains costly because replication packages vary widely in structure, software environment, and documentation. We develop and evaluate an agentic AI workflow that addresses this execution bottleneck while preserving scientific rigor. The system separates scientific reasoning from computational execution. Researchers design fixed diagnostic templates, and the workflow automates the acquisition, harmonization, and execution of replication materials using pre-specified, version-controlled code. A structured knowledge layer records resolved failure patterns, enabling adaptation across heterogeneous studies while keeping each pipeline version transparent and stable. We evaluate this workflow on 92 instrumental variable (IV) studies, including 67 with manually verified reproducible 2SLS estimates and 25 newly published IV studies under identical criteria. For each paper, we analyze up to three two-stage least squares (2SLS) specifications, totaling 215. Across the 92 papers, the system achieves 87% end-to-end success overall. Conditional on accessible data and code, reproducibility is 100% at both the paper and specification levels. The framework substantially lowers the cost of executing established empirical protocols and can be adapted in empirical settings where analytic templates and norms of transparency are well established.
+abstract: Computational reproducibility is central to scientific credibility, yet verifying published results at scale remains costly. We develop an AI-assisted workflow for automated full-paper replication---retrieving materials, reconstructing environments, executing code, and matching outputs to point estimates reported in regression tables. We define a universe of all empirical and quantitative papers from the three top political science journals (2010--2025) and measure stated data availability using automated extraction. For a stratified sample of 384 studies, we apply the workflow to conduct full-paper replication, totaling 3,382 empirical models. We find that journal verification requirements, combined with data archiving mandates, drive reproducibility, the full-paper reproducibility rate rises from 29.6% before DA-RT adoption to 79.8% after, and conditional on accessible replication packages, 94.4% of papers are fully reproducible (237/251). As a secondary application, we apply standardized IV diagnostics to 92 studies (215 specifications), illustrating how automated execution enables systematic reanalysis across heterogeneous empirical settings.
 
 # Summary. An optional shortened abstract.
-summary: We develop an agentic AI workflow for large-scale reproducibility of empirical research. Evaluated on 92 instrumental variable studies (215 specifications), the system achieves 87% end-to-end success, and 100% conditional on accessible data and code. The framework separates scientific reasoning from computational execution, substantially lowering the cost of systematic reanalysis.
+summary: We develop an AI-assisted workflow for checking computational reproducibility at scale. Reanalysis of 384 political science studies shows that verification and archiving requirements are associated with substantially higher reproducibility; 94.4% of studies with accessible replication packages are fully reproducible.
 
 tags: ["GenAI"]
 
 # Display this page in the Featured widget?
+related_tool:
+  name: ReproAI
+  url: https://reproai.org/
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
+links:
+- name: "Pre-Print"
+  url: "/publication/ai_reproducibility/AI_reproducibility.pdf"
+  icon_pack: "fas"
+  icon: "file-pdf"
+- name: "arXiv"
+  url: "https://arxiv.org/abs/2602.16733"
+  icon_pack: "ai"
+  icon: "arxiv"
+- name: "OSF"
+  url: "https://osf.io/preprints/socarxiv/ru5fa_v1"
+  icon_pack: "ai"
+  icon: "arxiv"
+- name: "Demo"
+  url: "https://youtu.be/lhSIOPSxKc0"
+  icon_pack: "fab"
+  icon: "youtube"
 # - name: "arXiv"
 #   url: "https://arxiv.org/abs/2407.09876"  # 示例链接
 #   icon_pack: "ai"

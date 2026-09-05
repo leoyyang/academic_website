@@ -12,7 +12,7 @@ address:
   postcode: '361005'
   country: China
 
-summary: An example talk using Wowchemy's Markdown slides feature.
+summary: Presented at the 2019 Asian Meeting of the Econometric Society at Xiamen University.
 abstract: "The 2019 Asia Meeting of the Econometric Society (2019 AMES) is open for registration. The meeting will be held on June 14-16, 2019 at Xiamen University, located in the resort-like island city of Xiamen (also called Amoy) in southeast China, with convenient flight connections to most major Asian cities. In addition to contributed and invited sessions, keynote lectures have been arranged."
 
 # Talk start and end times.
@@ -24,8 +24,10 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: "2018-01-01T00:00:00Z"
 
-authors: []
-tags: []
+authors:
+  - Leo Y. Yang
+tags:
+  - seminar
 
 # Is this a featured talk? (true/false)
 featured: false
@@ -34,11 +36,7 @@ image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+links: []
 url_code: ""
 url_pdf: ""
 url_slides: ""

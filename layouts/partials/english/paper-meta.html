@@ -1,0 +1,4 @@
+<p class="paper-meta">
+  <span>{{ range $i, $author := .Params.authors }}{{ if $i }}, {{ end }}{{ if eq $author "Leo Yang" }}<strong>Leo Yang</strong>{{ else if eq $author "杨阳" }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ end }}</span>
+  <span class="paper-status">{{ if in .Params.publication_types "3" }}{{ .Params.publication | default "Working paper" }}{{ else }}<span class="paper-journal">{{ .Params.publication | default "Publication" }}</span>{{ end }} · {{ .Date.Format "2006" }}</span>
+</p>

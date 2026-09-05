@@ -1,5 +1,15 @@
 ---
+preview_stat:
+  kicker: Wages & careers · China
+  value: "500M"
+  label: job postings analyzed
+  note: Recruitment data · 2015–2022
+preview_crop: [40, 430, 1010, 1110]
+preview_alt: "Scatterplot of programmer starting pay and wage growth across Chinese cities"
+preview_image: fig_9.png
 title: "The Future of Professions: A Data-Driven Analysis of Wage Growth and Career Choices Across Cities and Industries"
+short_title: "Wages, cities, and career choices"
+deck: "Comparing wage growth across industries and cities through large-scale online recruitment data."
 subtitle: 
 
 # Summary for listings and search engines
@@ -165,7 +175,7 @@ While this figure may seem high, when we perform the same calculation for all po
 
 The table below lists the top ten salaries over ten years for different jobs in Beijing and Shanghai. As can be seen, electronic component engineering technicians, though lagging behind models, futures traders, sonographers, and information security engineering technicians in Table 1 of this article, have become the undisputed first place in total salary over ten years in Beijing and Shanghai due to the rapid wage growth with years of service. Considering that electronic component engineering technicians are exactly the key talents needed for China to catch up in the field of chips, their top ranking in the ten-year salary is not too surprising.
 
-![](fig_7.png)
+![](fig_7.jpg)
 
 Of course, there might be some data in the table above that may seem difficult to understand. When you use the Data Group applet to query data, you may find that some positions show a dashed line for wage growth as years of service increase. This is because there is not enough data to calculate the wage growth over years of service for these positions, and we can only simulate it in some ways - including using the wage growth rate over the years of subcategories and major categories of occupations, using the local average wage growth rate over the years, etc.
 

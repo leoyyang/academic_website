@@ -12,7 +12,7 @@ address:
   postcode:
   country: China
 
-summary: An example talk using Wowchemy's Markdown slides feature.
+summary: Presented at the Computational Social Science Workshop at Renmin University of China.
 abstract: ""
 
 # Talk start and end times.
@@ -24,8 +24,10 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: "2023-02-01T00:00:00Z"
 
-authors: []
-tags: []
+authors:
+  - Leo Y. Yang
+tags:
+  - workshop
 
 # Is this a featured talk? (true/false)
 featured: false

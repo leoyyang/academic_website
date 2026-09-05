@@ -5,8 +5,8 @@ title: "Gaslighting: Comment Moderation on Chinese Social Media"
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Thomas Cao (Stanford University)
-- Yiqing Xu (Stanford University)
+- Thomas Cao
+- Yiqing Xu 
 - Leo Yang
 
 # Author notes (optional)
@@ -27,15 +27,15 @@ publishDate: "2022-12-14T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: Working Paper
-publication_short: Working Paper
+# publication: Working Paper
+# publication_short: Working Paper
 
 abstract: In this study, we examine the moderation of comment sections by government-affiliated accounts on Sina Weibo, a popular social media platform in China. While previous research has examined the separate strategies of censorship and propaganda used by authoritarian regimes to control information, our work aims to bridge the gap by examining the intersection of these two tactics in China. Specifically, we focus on how government-affiliated accounts use propaganda content and censor undesirable comments under their posts. We utilize a unique, high-frequency dataset and conduct two survey experiments to answer three research questions. First, why and when government-affiliated accounts choose to moderate their comment sections? Second, what are the causal effects of comment section censorship on remaining content and user engagement. Third, how does comment section moderation influence public opinion by altering second-order beliefs.
 
 # Summary. An optional shortened abstract.
-summary: In this study, we examine the moderation of comment sections by government-affiliated accounts on Sina Weibo, a popular social media platform in China. While previous research has examined the separate strategies of censorship and propaganda used by authoritarian regimes to control information, our work aims to bridge the gap by examining the intersection of these two tactics in China. Specifically, we focus on how government-affiliated accounts use propaganda content and censor undesirable comments under their posts. We utilize a unique, high-frequency dataset and conduct two survey experiments to answer three research questions. First, why and when government-affiliated accounts choose to moderate their comment sections? Second, what are the causal effects of comment section censorship on remaining content and user engagement. Third, how does comment section moderation influence public opinion by altering second-order beliefs.
+summary: We study how government-affiliated Weibo accounts combine propaganda with comment moderation. High-frequency data and survey experiments examine the effects on engagement, remaining content, and beliefs about public opinion.
 
-tags: []
+tags: ["Media"]
 
 # Display this page in the Featured widget?
 featured: true

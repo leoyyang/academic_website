@@ -30,14 +30,14 @@ education:
   - course: Ph.D. in Political Science (with a Specialization in Computational Social Science)
     institution: University of California, San Diego
     year: 2023
-  - course: M.Phil in Social Science
+  - course: M.Phil. in Social Science
     institution: Hong Kong University of Science and Technology
     year: 2016
-  - course: Master in Finance
+  - course: M.A. in Finance
     institution: Xiamen University
     year: 2014
-  - course: BSc in International Business and Trade
-    institution: Xiamen University, Tan Kah Kee College
+  - course: B.A. in Economics
+    institution: Tan Kah Kee College, Xiamen University
     year: 2010
 
 # Social/Academic Networking
@@ -78,10 +78,10 @@ email: ""
 highlight_name: true
 ---
 
-I am a Research Assistant Professor in the Department of Accountancy, Economics and Finance at Hong Kong Baptist University. I study the political economy of digital transformation. My research examines how artificial intelligence and large-scale digital data reshape labor markets, institutional dynamics, and the production of empirical knowledge. I combine substantive empirical analysis with the development of scalable AI-driven infrastructures to improve measurement, transparency, and accountability in data-rich environments, with a focus on China. Previously, I was a Postdoctoral Scholar at the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)).
+I am a Research Assistant Professor in the Department of Accountancy, Economics and Finance, School of Business, at Hong Kong Baptist University. I study the political economy of digital transformation. My research examines how AI and digital technologies reshape work, and how information shapes political behavior and accountability, with a focus on China. I also develop AI methods for analyzing large-scale data and build tools that make empirical research more transparent and reproducible. Previously, I was a Postdoctoral Scholar at the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)).
 
-I hold a Ph.D. in Political Science with a specialization in Computational Social Science from the University of California, San Diego ([UCSD](https://ucsd.edu/)), obtained in 2023. I also earned an MPhil in Social Science from the Hong Kong University of Science and Technology ([HKUST](https://hkust.edu.hk/)) in 2016 and an MA in Finance from Xiamen University ([XMU](https://www.xmu.edu.cn/)) in 2014.
+I hold a Ph.D. in Political Science with a specialization in Computational Social Science from the University of California, San Diego ([UCSD](https://ucsd.edu/)), obtained in 2023. Before that, I earned an M.Phil. in Social Science from the Hong Kong University of Science and Technology ([HKUST](https://hkust.edu.hk/)) in 2016, an M.A. in Finance from the Wang Yanan Institute for Studies in Economics (WISE) at Xiamen University ([XMU](https://www.xmu.edu.cn/)) in 2014, and a B.A. in Economics from Tan Kah Kee College, Xiamen University, in 2010.
 
-In addition to my current role, I am a faculty affiliate to the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)) and UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)).
+In addition to my current role, I am a faculty affiliate of the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)) and UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)).
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

@@ -4,7 +4,7 @@ title: Practical Workshop for Graduate Students
 event:  Practical Workshop for Graduate Students
 event_url: https://fsi.stanford.edu/events/large-scale-datasets-analysis-china-practical-workshop-graduate-students
 
-location: Stanford Univeristy
+location: Stanford University
 address:
   street: Encina Hall East, Goldman Room E409
   city: Palo Alto
@@ -12,7 +12,7 @@ address:
   postcode:
   country: United States
 
-summary: An example talk using Wowchemy's Markdown slides feature.
+summary: Led a practical workshop on large-scale datasets analysis of China at Stanford SCCEI.
 abstract: ""
 
 # Talk start and end times.
@@ -24,8 +24,10 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: "2023-12-11T00:00:00Z"
 
-authors: []
-tags: []
+authors:
+  - Leo Y. Yang
+tags:
+  - workshop
 
 # Is this a featured talk? (true/false)
 featured: false
@@ -34,11 +36,7 @@ image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+links: []
 url_code: ""
 url_pdf: ""
 url_slides: ""

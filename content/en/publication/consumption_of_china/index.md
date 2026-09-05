@@ -33,9 +33,9 @@ publication_short: ""
 abstract: We have systematically explored the patterns, trends, and main characteristics of China's e-commerce by relying on data on JingDong's online sales. One of the most interesting findings is that China's online consumer spending is positively correlated with regional income. In addition, people's online consumer spending behavior exhibits regional heterogeneity and age cohort heterogeneity. People in the east region exhibit the strongest online consumer spending capacity. Finally, the most popular products sold online at JD are cell phones, followed by food and beverages, makeup and cosmetics, digital products, and lifestyle and travel goods.
 
 # Summary. An optional shortened abstract.
-summary: China's online consumer spending is positively correlated with regional income. In addition, people's online consumer spending behavior exhibits regional heterogeneity and age cohort heterogeneity.
+summary: This book chapter uses JD’s festival sales to study patterns of consumption in China’s e-commerce market.
 
-tags: []
+tags: ["Labor"]
 
 # Display this page in the Featured widget?
 featured: false

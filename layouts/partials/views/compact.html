@@ -1,0 +1,80 @@
+{{ if and (eq site.Language.Lang "en") (eq .item.Type "publication") }}
+{{ partial "english/paper.html" (dict "page" .item) }}
+{{ else if eq site.Language.Lang "en" }}
+<article class="paper-row">
+  <time class="paper-meta" datetime="{{ .item.Date.Format "2006-01-02" }}">{{ .item.Date.Format "Jan 2, 2006" }}</time>
+  <h3><a href="{{ .item.RelPermalink }}">{{ .item.Title }}</a></h3>
+  {{ with .item.Params.summary }}<p class="paper-summary">{{ . | markdownify }}</p>{{ end }}
+</article>
+{{ else }}
+{{/* Card view for publications with academic style */}}
+{{ $item := .item }}
+<div class="publication-card stream-item" data-tags="{{ if $item.Params.tags }}{{ delimit $item.Params.tags " " }}{{ end }}">
+  <div class="publication-card-content">
+    
+    {{/* Title */}}
+    <h3 class="publication-title">
+      <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+    </h3>
+    
+    {{/* Authors and Journal */}}
+    <div class="publication-meta">
+      {{ with $item.Params.authors }}
+      <span class="publication-authors">
+        {{ range $index, $author := . }}
+          {{ if gt $index 0 }}, {{ end }}{{ $author }}
+        {{ end }}
+      </span>
+      {{ end }}
+      
+      {{ if and $item.Params.authors $item.Params.publication }}
+      <span class="publication-separator">. </span>
+      {{ end }}
+      
+      {{ with $item.Params.publication }}
+      <span class="publication-journal">{{ . }}</span>
+      {{ end }}
+      
+      {{ with $item.Date }}
+      <span class="publication-separator">, </span>
+      <span class="publication-date">{{ if eq $item.Params.publication_types (slice "3") }}Working Paper{{ else }}{{ .Format "2006" }}{{ end }}</span>
+      {{ end }}
+    </div>
+    
+    {{/* Abstract */}}
+    {{ with $item.Params.summary }}
+    <div class="publication-abstract">
+      {{ . | markdownify | emojify }}
+    </div>
+    {{ end }}
+    
+    {{/* Buttons */}}
+    {{ if or $item.Params.links $item.Params.podcast }}
+    <div class="publication-links">
+      {{/* Podcast Button - Always First */}}
+      {{ if $item.Params.podcast }}
+      <button class="btn btn-outline-primary btn-sm publication-btn podcast-btn" 
+              data-podcast-en="{{ if $item.Params.podcast.en }}{{ $item.RelPermalink }}{{ $item.Params.podcast.en }}{{ end }}"
+              data-podcast-zh="{{ if $item.Params.podcast.zh }}{{ $item.RelPermalink }}{{ $item.Params.podcast.zh }}{{ end }}"
+              data-title="{{ $item.Title }}"
+              aria-label="Quick listen to audio summary">
+        <i class="fas fa-podcast podcast-icon" aria-hidden="true"></i>
+        Quick Listen
+      </button>
+      {{ end }}
+      
+      {{/* Other Buttons */}}
+      {{ range $item.Params.links }}
+      <a class="btn btn-outline-primary btn-sm publication-btn" href="{{ .url | relURL }}" target="_blank" rel="noopener">
+        {{ if .icon_pack }}
+        <i class="{{ .icon_pack }} {{ if .icon_pack | eq "ai" }}ai-{{ .icon }}{{ else }}fa-{{ .icon }}{{ end }}" aria-hidden="true"></i>
+        {{ end }}
+        {{ .name }}
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+    
+  </div>
+</div> 
+{{ end }}

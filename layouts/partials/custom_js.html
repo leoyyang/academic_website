@@ -1,0 +1,5 @@
+{{ if and (eq .Language.Lang "en") (eq .Layout "job-tracker") }}
+  {{ range slice "js/vendor/chart.umd.js" "js/tracker-data.js" "js/tracker.js" }}
+    {{ $script := resources.Get . | minify | fingerprint }}<script src="{{ $script.RelPermalink }}" defer></script>
+  {{ end }}
+{{ end }}

@@ -12,8 +12,8 @@ address:
   postcode: '94305'
   country: United States
 
-summary: An example talk using Wowchemy's Markdown slides feature.
-abstract: "Information Control and Manipulation -- More than half of the world's population live under authoritarian rule, where censorship, propaganda, and other forms of information manipulation are deployed to shape attitudes and behaviors at scale. How are autocratic government shaping the flow of information within and outside of their borders? What are the effects of of these information manipulation strategies? We will provide an overview of the datasets we are gathering to shed light on these questions, primarily in the context of China, and provide more detailed information on two collection efforts. The first is a corpus of 791 Chinese newspapers, including central and local newspapers as well as Communist Party and commercial newspapers. The second is the screenomics framework, which aims to gather real-time information about how individual consume media via their smartphones."
+summary: Presented on information control and large-scale media datasets at Stanford's SDSI Data Science Lab.
+abstract: "Information Control and Manipulation -- More than half of the world's population live under authoritarian rule, where censorship, propaganda, and other forms of information manipulation are deployed to shape attitudes and behaviors at scale. How are autocratic governments shaping the flow of information within and outside of their borders? What are the effects of these information manipulation strategies? We will provide an overview of the datasets we are gathering to shed light on these questions, primarily in the context of China, and provide more detailed information on two collection efforts. The first is a corpus of 791 Chinese newspapers, including central and local newspapers as well as Communist Party and commercial newspapers. The second is the screenomics framework, which aims to gather real-time information about how individual consume media via their smartphones."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -24,8 +24,11 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: "2017-01-01T00:00:00Z"
 
-authors: []
-tags: []
+authors:
+  - Leo Y. Yang
+tags:
+  - seminar
+  - data
 
 # Is this a featured talk? (true/false)
 featured: false
@@ -34,11 +37,7 @@ image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+links: []
 url_code: ""
 url_pdf: ""
 url_slides: ""

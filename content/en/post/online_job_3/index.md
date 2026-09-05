@@ -1,5 +1,15 @@
 ---
+preview_stat:
+  kicker: AI exposure · China
+  value: "1,639"
+  label: occupations mapped
+  note: Task-based analysis · April 2023
+preview_crop: [40, 290, 1000, 665]
+preview_alt: "Scatterplot of occupational pay and AI exposure in China"
+preview_image: fig_7.png
 title: "Unveiling the Impact of AI on the Job Market: Assessing the Potential Substitution of Occupations by Large Language Models in China"
+short_title: "AI exposure across Chinese occupations"
+deck: "An early analysis of how large language models could affect work in China, using occupational tasks and online job postings."
 subtitle: 
 
 # Summary for listings and search engines

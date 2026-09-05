@@ -1,0 +1,31 @@
+{{ $page := . }}
+{{ $links := slice }}
+{{ $seen := slice }}
+{{ $pdf := .Params.url_pdf | default "" }}
+{{ with .Resources.GetMatch "index.pdf" }}{{ $pdf = .RelPermalink }}{{ end }}
+{{ if $pdf }}
+  {{ with .Resources.GetMatch $pdf }}{{ $pdf = .RelPermalink }}{{ end }}
+  {{ $pdf = $pdf | relURL }}
+  {{ $label := "PDF" }}{{ if and (ne site.Language.Lang "zh") (not (strings.HasSuffix (lower $pdf) ".pdf")) }}{{ $label = "Read chapter" }}{{ end }}
+  {{ $links = $links | append (dict "url" $pdf "name" $label) }}{{ $seen = $seen | append $pdf }}
+{{ end }}
+{{ range slice (dict "key" "url_code" "name" "Code") (dict "key" "url_dataset" "name" "Data") (dict "key" "url_slides" "name" "Slides") (dict "key" "url_video" "name" "Video") }}
+  {{ $label := .name }}
+  {{ with index $page.Params .key }}
+    {{ $url := . }}{{ with $page.Resources.GetMatch $url }}{{ $url = .RelPermalink }}{{ end }}
+    {{ if not (in $seen ($url | relURL)) }}{{ $links = $links | append (dict "url" ($url | relURL) "name" $label) }}{{ $seen = $seen | append ($url | relURL) }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ range .Params.links }}
+  {{ $url := .url }}{{ with $page.Resources.GetMatch $url }}{{ $url = .RelPermalink }}{{ end }}
+  {{ $url = $url | relURL }}
+  {{ if not (in $seen $url) }}
+    {{ $name := .name }}
+    {{ if strings.HasSuffix (lower $url) ".pdf" }}{{ if in (slice "Pre-Print" "Post-Print") $name }}{{ $name = "PDF" }}{{ end }}{{ end }}
+    {{ $links = $links | append (dict "url" $url "name" $name "icon" (.icon | default "") "icon_pack" (.icon_pack | default "")) }}{{ $seen = $seen | append $url }}
+  {{ end }}
+{{ end }}
+<div class="paper-links" aria-label="{{ partial "english/ui-text.html" "Paper resources" }}">
+  {{ range $links }}<a class="resource-link" href="{{ .url }}">{{ partial "english/resource-icon.html" . }}{{ partial "english/ui-text.html" .name }}</a>{{ end }}
+  {{ with .Resources.GetMatch "cite.bib" }}<a class="resource-link js-cite-modal" href="{{ .RelPermalink }}" data-filename="{{ .RelPermalink }}">{{ partial "english/resource-icon.html" (dict "name" "Cite") }}{{ partial "english/ui-text.html" "Cite" }}</a>{{ end }}
+</div>

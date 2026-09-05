@@ -1,0 +1,8 @@
+{{- $defaults := dict "PDF" "file-pdf" "Read chapter" "book-open" "Code" "code" "Data" "database" "Slides" "images" "Video" "play-circle" "Demo" "play-circle" "Cite" "quote-right" "Appendix" "file-alt" "OSF" "archive" -}}
+{{- $icon := .icon | default (index $defaults .name) | default "external-link-alt" -}}
+{{- $pack := .icon_pack | default "fas" -}}
+{{- if eq .name "arXiv" -}}{{- $pack = "ai" -}}{{- $icon = "arxiv" -}}{{- end -}}
+{{- if eq .name "SSRN" -}}{{- $pack = "ai" -}}{{- $icon = "ssrn" -}}{{- end -}}
+{{- if eq .name "OSF" -}}{{- $pack = "fas" -}}{{- $icon = "archive" -}}{{- end -}}
+{{- $prefix := "fa" -}}{{- if eq $pack "ai" -}}{{- $prefix = "ai" -}}{{- end -}}
+<i class="{{ $pack }} {{ $prefix }}-{{ $icon }}" aria-hidden="true"></i>

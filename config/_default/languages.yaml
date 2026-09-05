@@ -7,6 +7,32 @@ en:
   languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/en
+  params:
+    description: "Leo Y. Yang at Hong Kong Baptist University. Research on digital political economy, AI, labor markets, and reproducible social science."
+    plugins_js: [english]
+    last_updated: '2026-09-05'
+    marketing:
+      seo:
+        description: 'Leo Y. Yang at Hong Kong Baptist University. Research on digital political economy, AI, labor markets, and reproducible social science.'
+        site_type: Person
+    appearance:
+      theme_day: minimal
+      theme_night: dark
+    header:
+      on_scroll: fixed
+      navbar:
+        block: english-nav
+    footer:
+      copyright:
+        notice: '© {year} Leo Y. Yang'
+  menu:
+    main:
+      - {name: About, url: '/#about', weight: 10}
+      - {name: Research, url: '/publication/', weight: 20}
+      - {name: 'Software & Data', url: '/#software', weight: 30}
+      - {name: 'Data Insights', url: '/#posts', weight: 40}
+      - {name: Talks, url: '/#talks', weight: 50}
+      - {name: CV, url: '/uploads/resume.pdf', weight: 60}
 
 # Uncomment the lines below to configure your website in a second language.
 zh:
@@ -15,24 +41,32 @@ zh:
  title: 杨阳
  params:
    description: 研究助理教授
+   plugins_js: [english]
+   appearance:
+     theme_day: minimal
+     theme_night: dark
+   header:
+     on_scroll: fixed
+     navbar:
+       block: english-nav
  menu:
    main:
      - name: 关于
-       url: '#about'
+       url: '/zh/#about'
        weight: 1
 
      - name: 研究
-       url: '#featured'
+       url: '/zh/#featured'
        weight: 2
 
      - name: 软件与数据
-       url: '#software'
+       url: '/zh/#software'
        weight: 3
 
      - name: 会议
-       url: '#talks'
+       url: '/zh/#talks'
        weight: 5
 
      - name: 联系
-       url: '#contact'
+       url: '/zh/#contact'
        weight: 6

@@ -37,12 +37,12 @@ publication_short: Working Paper
 abstract: From "Smart City" to "Belt and Road," how do policy initiatives diffuse across the Chinese bureaucracy? Have these patterns of diffusion changed as China moved from Hu's collective leadership to Xi's more personalist and centralized control? In this paper, we adopt a corpus-based approach to describing China's policy diffusion process, expanding on previous research that predominantly rely on case studies in a specific policy area or certain localities to understand policymaking. Analyzing a large corpus of central and local policy documents published by the Chinese government between 2006 and 2017, we identify a typology of three main patterns, top-down (central policy signal predates local diffusion), bottom-up (local diffusion predates central signal and is unperturbed by later central signals), and hybrid (limited local diffusion is significantly augmented by central signal). We find that truly bottom-up diffusion is quite rare in Hu's or Xi's administration. Under Xi, however, top-down surpassed hybrid as the dominant mode of diffusion. These findings suggest that Xi’s politics has had a substantive impact on policy diffusion in China, resulting in more initiatives that are formulated entirely from the top. Our corpus-based approach and data also suggest a new methodological avenue for studying China's policymaking process.
 
 # Summary. An optional shortened abstract.
-summary: Analyzing a large corpus of central and local policy documents published by the Chinese government between 2006 and 2017, we identify a typology of three main patterns, top-down (central policy signal predates local diffusion), bottom-up (local diffusion predates central signal and is unperturbed by later central signals), and hybrid (limited local diffusion is significantly augmented by central signal). We find that truly bottom-up diffusion is quite rare in Hu's or Xi's administration. Under Xi, however, top-down surpassed hybrid as the dominant mode of diffusion.
+summary: This project uses a corpus-based approach to examine policy diffusion in China across the Hu and Xi administrations.
 
-tags: []
+tags: ["Media"]
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
@@ -61,7 +61,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Leo Yang**](http://www.sse.com.cn/disclosure/bond/announcement/local/c/2021-06-09/4211635595564207591608631.pdf)'
+  caption: 'Image credit: Leo Yang'
   focal_point: ""
   preview_only: false
 

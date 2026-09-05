@@ -1,0 +1,37 @@
+<div class="section-topline"><div><h2>Data Insights</h2></div><a class="section-link" href="/post/">All insights <span aria-hidden="true">→</span></a></div>
+<div class="insight-carousel" role="region" aria-roledescription="carousel" aria-label="Data Insights articles">
+<div class="insight-list" id="insight-track" tabindex="0" aria-label="Articles; use left and right arrow keys to browse">
+{{ range (where site.RegularPages "Section" "post").ByDate.Reverse }}
+  {{ $post := . }}
+  <article class="insight-row">
+    <div><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time><h3><a href="{{ .RelPermalink }}">{{ .Params.short_title | default .Title }}</a></h3><p>{{ .Params.deck | default .Params.summary }}</p></div>
+    {{ with .Params.preview_stat }}
+      <a class="insight-image" href="{{ $post.RelPermalink }}" aria-label="Read {{ $post.Params.short_title | default $post.Title }}">
+        <span class="insight-cover"><span class="insight-cover-kicker">{{ .kicker }}</span><span class="insight-cover-value">{{ .value }}</span><span class="insight-cover-label">{{ .label }}</span><span class="insight-cover-note">{{ .note }}</span></span>
+      </a>
+    {{ else }}
+    {{ with .Resources.GetMatch (.Params.preview_image | default "fig_1.*") }}
+      {{ $image := .Resize "600x webp" }}
+      <a class="insight-image" href="{{ $post.RelPermalink }}" aria-label="Read {{ $post.Params.short_title | default $post.Title }}">
+        {{ with $post.Params.preview_crop }}
+          {{ $x := float (index . 0) }}{{ $y := float (index . 1) }}{{ $w := float (index . 2) }}{{ $h := float (index . 3) }}
+          {{ $source := $post.Resources.GetMatch $post.Params.preview_image }}
+          <span class="insight-crop" style="{{ printf "--crop-ratio: %.5f; --crop-scale: %.5f%%; --crop-left: %.5f%%; --crop-top: %.5f%%;" (div $w $h) (mul 100 (div (float $source.Width) $w)) (mul -100 (div $x $w)) (mul -100 (div $y $h)) | safeCSS }}">
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" draggable="false" alt="{{ $post.Params.preview_alt }}">
+          </span>
+        {{ else }}
+          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" draggable="false" alt="{{ $post.Params.preview_alt | default $post.Title }}">
+        {{ end }}
+      </a>
+    {{ end }}
+    {{ end }}
+  </article>
+{{ end }}
+</div>
+<div class="insight-controls" hidden>
+  <span class="insight-hint">Drag or use the arrows</span>
+  <span class="insight-position" role="status" aria-live="polite"></span>
+  <button type="button" data-insight-step="-1" aria-label="Previous articles" aria-controls="insight-track"><span aria-hidden="true">←</span></button>
+  <button type="button" data-insight-step="1" aria-label="Next articles" aria-controls="insight-track"><span aria-hidden="true">→</span></button>
+</div>
+</div>

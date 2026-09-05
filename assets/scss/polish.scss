@@ -1,0 +1,54 @@
+// September 2026 audit refinements. Preserve the established English visual system.
+html[lang="en-us"] {
+  .portrait-frame { padding: 6px; border-radius: 22px; box-shadow: none; }
+  .intro-footnote { background: transparent; border-top: 1px solid var(--line); border-radius: 0; padding: 22px 0 0; }
+  .intro-background p { margin: 0; font: inherit; }
+  .intro-background p + p { margin-top: 12px; }
+  .english-nav { border-radius: 14px; }
+  .theme-dropdown .dropdown-item { font-size: 14px; }
+  #featured .paper-row h3, .research-index .paper-row h3 { font-weight: 400; line-height: 1.22; }
+  #featured .paper-meta, .research-index .paper-meta { font-size: 14px; }
+  #featured .paper-row .resource-link, #featured .paper-row summary,
+  .research-index .paper-row .resource-link { font-size: 13px; }
+  @media (min-width: 768px) {
+    #featured .paper-heading { flex: 1; }
+    @supports (grid-template-rows: subgrid) {
+      #featured .year-papers { row-gap: 0; }
+      #featured .paper-row { display: grid; grid-template-rows: subgrid; grid-row: span 4; row-gap: 0; margin-bottom: 16px; }
+      #featured .paper-heading { align-self: start; }
+      #featured .paper-links { align-self: start; margin-top: 0; }
+    }
+    #featured .year-papers:has(details[open]) { row-gap: 16px; align-items: start; }
+    #featured .year-papers:has(details[open]) .paper-row { display: flex; grid-row: auto; margin-bottom: 0; }
+    #featured .year-papers:has(details[open]) .paper-heading { flex: none; }
+  }
+  #software { padding-block: 60px !important; }
+  .tool-list { gap: 16px; }
+  .tool-surface { padding: 22px; }
+  .research-tool:first-child .tool-surface { padding: 28px; }
+  .tool-heading { margin-bottom: 14px; }
+  .research-tool:first-child .tool-logo { width: 72px; height: 72px; margin: 0 0 16px; }
+  .research-tool:first-child .tool-heading h3 { font-size: 46px; }
+  .tool-heading h3 { font-size: 28px; }
+  .tool-surface > p { margin-bottom: 12px; line-height: 1.75; }
+  .research-tool:first-child .tool-surface > p:not(.tool-access) { font-size: 15px; }
+  .research-tool .tool-access { padding-top: 8px; margin-bottom: 12px; }
+  .insight-cover { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 14px 16px; }
+  .insight-cover-kicker { color: var(--muted); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+  .insight-cover-value { font-family: 'Newsreader', serif; color: var(--accent); font-size: 50px; line-height: 1.1; margin: 5px 0 3px; }
+  .insight-cover-label { font-size: 13px; color: var(--ink); }
+  .insight-cover-note { font-size: 10px; color: var(--muted); margin-top: 6px; }
+  @media (max-width: 767px) {
+    .portrait-frame { padding: 4px; border-radius: 14px; }
+    .intro-footnote { padding: 20px 0 0; }
+    #featured .paper-row .resource-link, #featured .paper-row summary,
+    .research-index .paper-row .resource-link, .research-index .paper-row summary { min-height: 44px; }
+    #software { padding-block: 44px !important; }
+    .tool-surface, .research-tool:first-child .tool-surface { padding: 22px; }
+    .research-tool:first-child .tool-logo { width: 48px; height: 48px; margin: 0; }
+    .research-tool:first-child .tool-heading h3 { font-size: 36px; }
+    .research-tool:first-child .tool-surface > p:not(.tool-access) { font-size: 14px; }
+    .insight-controls button { width: 44px; height: 44px; }
+    .insight-cover-value { font-size: 44px; }
+  }
+}

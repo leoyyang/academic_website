@@ -23,9 +23,20 @@ html[lang="en-us"], html[lang^="zh"] {
   .english-nav { display: flex; align-items: center; gap: 24px; max-width: 1120px; padding: 16px 28px; margin: auto; border-bottom: 1px solid var(--line); background: var(--page); font-size: 14px; min-height: 76px; }
   .english-brand { display: inline-flex; align-items: center; gap: 5px; font-family: montserrat, sans-serif; font-weight: 700; font-size: 20px; color: var(--ink); white-space: nowrap; }
   .english-brand:hover, .english-brand:focus { color: var(--ink); text-decoration: none; }
-  .english-brand .brand-eto { display: block; width: 28px; height: 28px; flex: 0 0 28px; background-color: currentColor; -webkit-mask: url("/media/eto/eto.png") center / contain no-repeat; mask: url("/media/eto/eto.png") center / contain no-repeat; }
-  .english-brand:focus-visible .brand-eto { background-color: var(--accent); }
-  @media (hover: hover) { .english-brand:hover .brand-eto { background-color: var(--accent); } }
+  .brand-lockup { position: relative; display: inline-flex; align-items: center; gap: 1px; flex-shrink: 0; }
+  .brand-badge { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 44px; padding: 0; border: 0; border-radius: 4px; background: none; color: var(--ink); cursor: pointer; }
+  .brand-eto { display: block; width: 28px; height: 28px; background-color: currentColor; -webkit-mask: url("/media/eto/eto.png") center / contain no-repeat; mask: url("/media/eto/eto.png") center / contain no-repeat; transition: background-color 160ms ease; }
+  .brand-lockup:focus-within .brand-eto, .brand-lockup.is-open .brand-eto { background-color: var(--accent); }
+  @media (hover: hover) { .brand-lockup:hover .brand-eto { background-color: var(--accent); } }
+  .adventist-tooltip { position: absolute; top: calc(100% + 9px); left: 0; z-index: 1100; box-sizing: border-box; width: 304px; max-width: calc(100vw - 64px); padding: 22px 22px 19px; border: 1px solid #454443; border-radius: 6px; background: #242626; color: #f1eee7; box-shadow: 0 12px 32px #0002; opacity: 0; visibility: hidden; transform: translateY(-4px); transition: opacity 160ms ease, transform 160ms ease, visibility 160ms; cursor: default; }
+  .adventist-tooltip::before { content: ''; position: absolute; top: -11px; left: 0; right: 0; height: 11px; }
+  .brand-lockup.is-open .adventist-tooltip { opacity: 1; visibility: visible; transform: translateY(0); }
+  .adventist-wordmark { display: block; width: 100%; height: auto; overflow: visible; color: #e5aaa0; }
+  .adventist-wordmark path { fill: none; }
+  .adventist-label { display: block; margin-top: 12px; color: #e5aaa0; font-size: 12px; letter-spacing: .12em; }
+  .adventist-motto { display: block; margin-top: 17px; padding-top: 13px; border-top: 1px solid #ffffff24; color: #f1eee7; font-family: 'Manrope', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 12px; font-weight: 400; line-height: 1.8; letter-spacing: 0; white-space: normal; text-wrap: pretty; }
+  .adventist-motto > span { display: block; }
+  @media (prefers-reduced-motion: reduce) { .adventist-tooltip, .brand-eto { transition: none; transform: none; } }
   .english-menu { display: flex; align-items: center; gap: 24px; margin-left: auto; }
   .english-menu > a { color: var(--muted); min-height: 44px; display: inline-flex; align-items: center; border-bottom: 2px solid transparent; }
   .english-menu > a:hover,.english-menu > a[aria-current] { color: var(--accent); border-bottom-color: var(--accent); text-decoration: none; }

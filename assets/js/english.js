@@ -9,6 +9,35 @@
     document.addEventListener('keydown', () => { keyboardInput = true; }, true);
     document.addEventListener('pointerdown', () => { keyboardInput = false; }, true);
     document.addEventListener('wheel', () => { keyboardInput = false; }, { passive: true });
+    // Hover/focus reveals the badge; clicking pins it for touch and mouse users.
+    // The home link stays separate. Escape and an outside interaction dismiss it.
+    const brand = document.querySelector('.brand-lockup');
+    const badge = brand?.querySelector('.brand-badge');
+    if (brand && badge) {
+      let pinned = false;
+      const showBadge = open => {
+        brand.classList.toggle('is-open', open);
+        badge.setAttribute('aria-expanded', String(open));
+      };
+      const dismissBadge = () => { pinned = false; showBadge(false); };
+      brand.addEventListener('pointerenter', event => {
+        if (event.pointerType === 'mouse') showBadge(true);
+      });
+      brand.addEventListener('pointerleave', () => {
+        if (!pinned && !(keyboardInput && brand.contains(document.activeElement))) showBadge(false);
+      });
+      brand.addEventListener('focusin', () => { if (keyboardInput) showBadge(true); });
+      brand.addEventListener('focusout', event => {
+        if (!brand.contains(event.relatedTarget)) dismissBadge();
+      });
+      badge.addEventListener('click', () => { pinned = !pinned; showBadge(pinned); });
+      document.addEventListener('pointerdown', event => {
+        if (!brand.contains(event.target)) dismissBadge();
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') dismissBadge();
+      });
+    }
     const animate = (element, frames, options = {}) => {
       if (!element || reducedMotion.matches || document.hidden || !element.animate) return;
       const animation = element.animate(frames, { duration: 220, easing: easeOut, ...options });

@@ -1,7 +1,7 @@
 <a class="skip-link" href="#main-content">{{ partial "english/ui-text.html" "Skip to content" }}</a>
 <header>
   <nav id="navbar-main" class="english-nav" aria-label="{{ partial "english/ui-text.html" "Main navigation" }}">
-    <a class="english-brand" href="{{ "/" | relLangURL }}">{{ if eq site.Language.Lang "zh" }}杨阳{{ else }}Leo Y. Yang{{ end }}<img class="brand-eto" src="/media/eto/eto.png" width="38" height="38" alt="AI Adventist · 三体降临派" title="AI Adventist · 三体降临派"></a>
+    <a class="english-brand" href="{{ "/" | relLangURL }}">{{ if eq site.Language.Lang "zh" }}杨阳{{ else }}Leo Y. Yang{{ end }}<span class="brand-eto" role="img" aria-label="AI Adventist · 三体降临派" title="AI Adventist · 三体降临派"></span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="english-menu">{{ partial "english/ui-text.html" "Menu" }}</button>
     <div id="english-menu" class="english-menu">
       {{ range site.Menus.main }}<a href="{{ .URL }}"{{ if and (ne .URL "/") (strings.HasPrefix $.RelPermalink .URL) }} aria-current="page"{{ end }}>{{ .Name }}</a>{{ end }}

@@ -21,7 +21,8 @@ html[lang="en-us"], html[lang^="zh"] {
   .article-style img,.article-style img:hover,.pub-list-item:hover { transform: none; transition: none; }
   .page-header { background: var(--page); box-shadow: none; }
   .english-nav { display: flex; align-items: center; gap: 24px; max-width: 1120px; padding: 16px 28px; margin: auto; border-bottom: 1px solid var(--line); background: var(--page); font-size: 14px; min-height: 76px; }
-  .english-brand { font-family: montserrat, sans-serif; font-weight: 700; font-size: 20px; color: var(--ink); white-space: nowrap; }
+  .english-brand { display: inline-flex; align-items: center; gap: 5px; font-family: montserrat, sans-serif; font-weight: 700; font-size: 20px; color: var(--ink); white-space: nowrap; }
+  .english-brand .brand-eto { display: block; width: 38px; height: 38px; flex: 0 0 38px; object-fit: contain; }
   .english-menu { display: flex; align-items: center; gap: 24px; margin-left: auto; }
   .english-menu > a { color: var(--muted); min-height: 44px; display: inline-flex; align-items: center; border-bottom: 2px solid transparent; }
   .english-menu > a:hover,.english-menu > a[aria-current] { color: var(--accent); border-bottom-color: var(--accent); text-decoration: none; }

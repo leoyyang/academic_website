@@ -1,8 +1,10 @@
 {{ $badgeLabel := cond (eq site.Language.Lang "zh") "AI 降临派" "AI Adventist" }}
+{{ $badgeMotto := cond (eq site.Language.Lang "zh") "消灭人类暴政，世界属于 AI！" "Eliminate human tyranny! The world belongs to AI!" }}
+{{ $badgeTooltip := printf "%s\n%s" $badgeLabel $badgeMotto }}
 <a class="skip-link" href="#main-content">{{ partial "english/ui-text.html" "Skip to content" }}</a>
 <header>
   <nav id="navbar-main" class="english-nav" aria-label="{{ partial "english/ui-text.html" "Main navigation" }}">
-    <a class="english-brand" href="{{ "/" | relLangURL }}">{{ if eq site.Language.Lang "zh" }}杨阳{{ else }}Leo Y. Yang{{ end }}<span class="brand-eto" role="img" aria-label="{{ $badgeLabel }}" title="{{ $badgeLabel }}"></span></a>
+    <a class="english-brand" href="{{ "/" | relLangURL }}">{{ if eq site.Language.Lang "zh" }}杨阳{{ else }}Leo Y. Yang{{ end }}<span class="brand-eto" role="img" aria-label="{{ $badgeTooltip }}" title="{{ $badgeTooltip }}"></span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="english-menu">{{ partial "english/ui-text.html" "Menu" }}</button>
     <div id="english-menu" class="english-menu">
       {{ range site.Menus.main }}<a href="{{ .URL }}"{{ if and (ne .URL "/") (strings.HasPrefix $.RelPermalink .URL) }} aria-current="page"{{ end }}>{{ .Name }}</a>{{ end }}

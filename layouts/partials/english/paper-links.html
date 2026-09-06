@@ -27,5 +27,4 @@
 {{ end }}
 <div class="paper-links" aria-label="{{ partial "english/ui-text.html" "Paper resources" }}">
   {{ range $links }}<a class="resource-link" href="{{ .url }}">{{ partial "english/resource-icon.html" . }}{{ partial "english/ui-text.html" .name }}</a>{{ end }}
-  {{ with .Resources.GetMatch "cite.bib" }}<a class="resource-link js-cite-modal" href="{{ .RelPermalink }}" data-filename="{{ .RelPermalink }}">{{ partial "english/resource-icon.html" (dict "name" "Cite") }}{{ partial "english/ui-text.html" "Cite" }}</a>{{ end }}
 </div>

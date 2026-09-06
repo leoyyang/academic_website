@@ -78,7 +78,7 @@ email: ""
 highlight_name: true
 ---
 
-I am a Research Assistant Professor in the Department of Accountancy, Economics and Finance, School of Business, at Hong Kong Baptist University. I study the political economy of digital transformation. My research examines how AI and digital technologies reshape work, and how information shapes political behavior and accountability, with a focus on China. I also develop AI methods for analyzing large-scale data and build tools that make empirical research more transparent and reproducible. Previously, I was a Postdoctoral Scholar at the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)).
+I am a Research Assistant Professor in the Department of Accountancy, Economics and Finance, School of Business, at Hong Kong Baptist University. My research examines how AI and digital technologies reshape work, political institutions, and the practice of social science. Previously, I was a Postdoctoral Scholar at the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)).
 
 I hold a Ph.D. in Political Science with a specialization in Computational Social Science from the University of California, San Diego ([UCSD](https://ucsd.edu/)), obtained in 2023. Before that, I earned an M.Phil. in Social Science from the Hong Kong University of Science and Technology ([HKUST](https://hkust.edu.hk/)) in 2016, an M.A. in Finance from the Wang Yanan Institute for Studies in Economics (WISE) at Xiamen University ([XMU](https://www.xmu.edu.cn/)) in 2014, and a B.A. in Economics from Tan Kah Kee College, Xiamen University, in 2010.
 

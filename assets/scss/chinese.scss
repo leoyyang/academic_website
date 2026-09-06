@@ -1,4 +1,4 @@
-// Shared components, with Chinese typography and room for the existing full biography.
+// Shared components with Chinese typography and the English biography structure.
 html[lang^="zh"] {
   body { font-family: 'Manrope', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
   h1, h2, h3, h4 { letter-spacing: 0; }
@@ -9,8 +9,10 @@ html[lang^="zh"] {
   }
   .intro-heading h1 { font-size: 66px; line-height: 1.2; }
   .intro-research h2 { font-size: 30px; margin-bottom: 16px; }
-  .zh-biography { font-size: 15px; line-height: 1.95; }
-  .zh-biography p { margin-bottom: 16px; }
+  .intro-research > p { text-wrap: pretty; }
+  .intro-footnote { background: transparent; border-top: 1px solid var(--line); border-radius: 0; padding: 22px 0 0; }
+  .intro-background p { margin: 0; font: inherit; }
+  .intro-background p + p { margin-top: 12px; }
   .intro-role { line-height: 1.9; }
   #featured .paper-row h3, .research-index .paper-row h3 { font-family: 'Newsreader', 'Songti SC', STSong, serif; font-size: 23px; letter-spacing: 0; line-height: 1.5; }
   .research-years--paired { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
@@ -39,6 +41,7 @@ html[lang^="zh"] {
   }
   @media (max-width: 767px) {
     .intro-heading h1 { font-size: 44px; }
+    .intro-footnote { padding: 20px 0 0; }
     .intro-research h2 { font-size: 26px; }
     .zh-profile-facts { display: grid; grid-template-columns: 1fr; gap: 28px; }
     #featured .paper-row h3, .research-index .paper-row h3 { font-size: 21px; }

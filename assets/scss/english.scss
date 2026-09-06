@@ -22,7 +22,10 @@ html[lang="en-us"], html[lang^="zh"] {
   .page-header { background: var(--page); box-shadow: none; }
   .english-nav { display: flex; align-items: center; gap: 24px; max-width: 1120px; padding: 16px 28px; margin: auto; border-bottom: 1px solid var(--line); background: var(--page); font-size: 14px; min-height: 76px; }
   .english-brand { display: inline-flex; align-items: center; gap: 5px; font-family: montserrat, sans-serif; font-weight: 700; font-size: 20px; color: var(--ink); white-space: nowrap; }
+  .english-brand:hover, .english-brand:focus { color: var(--ink); text-decoration: none; }
   .english-brand .brand-eto { display: block; width: 28px; height: 28px; flex: 0 0 28px; background-color: currentColor; -webkit-mask: url("/media/eto/eto.png") center / contain no-repeat; mask: url("/media/eto/eto.png") center / contain no-repeat; }
+  .english-brand:focus-visible .brand-eto { background-color: var(--accent); }
+  @media (hover: hover) { .english-brand:hover .brand-eto { background-color: var(--accent); } }
   .english-menu { display: flex; align-items: center; gap: 24px; margin-left: auto; }
   .english-menu > a { color: var(--muted); min-height: 44px; display: inline-flex; align-items: center; border-bottom: 2px solid transparent; }
   .english-menu > a:hover,.english-menu > a[aria-current] { color: var(--accent); border-bottom-color: var(--accent); text-decoration: none; }

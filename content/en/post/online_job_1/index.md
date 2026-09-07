@@ -1,4 +1,7 @@
 ---
+preview_finding:
+  headline: "The wage dip\nis a mix effect."
+  detail: "The decline disappears when comparing like-for-like jobs."
 title: "Exploring 500 Million Online Job Postings: An Introduction to Data and Methods"
 preview_image: fig_4.png
 preview_crop: [40, 370, 1000, 490]

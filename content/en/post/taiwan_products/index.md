@@ -1,4 +1,7 @@
 ---
+preview_finding:
+  headline: "Few sources.\nGreater supply risk."
+  detail: "81 product groups combine Taiwan reliance with concentrated sourcing."
 title: "Preparing for Rain: An Analysis of Mainland China's Dependence on Imports of Taiwanese Products"
 preview_alt: "Map of mainland firms exposed to Taiwanese import supply chains"
 short_title: "Supply chains across the Taiwan Strait"

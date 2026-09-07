@@ -1,4 +1,7 @@
 ---
+preview_finding:
+  headline: "Tasks outlive jobs."
+  detail: "Entry routes shrink; experienced workers take on more."
 title: "Fewer Entry-Level Jobs, More Work for Experienced Workers"
 short_title: "Who does the work when entry-level jobs disappear?"
 deck: "Chinese job ads reveal shrinking entry routes and broader task bundles for experienced workers in the age of AI."
@@ -17,11 +20,6 @@ tags:
 categories:
   - Data Insights
 projects: []
-preview_stat:
-  kicker: AI & the division of labor
-  value: "740M"
-  label: job ads in the original essay
-  note: China · August 2026
 preview_image: images/007.png
 preview_alt: "Comparison of AI exposure and changes in demand measured by occupations and tasks"
 image:

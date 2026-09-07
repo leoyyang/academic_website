@@ -5,6 +5,11 @@
   {{ $post := . }}
   <article class="insight-row">
     <div><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time><h3><a href="{{ .RelPermalink }}">{{ .Params.short_title | default .Title }}</a></h3><p>{{ .Params.deck | default .Params.summary }}</p></div>
+    {{ with .Params.preview_finding }}
+      <a class="insight-image" href="{{ $post.RelPermalink }}" aria-label="{{ .headline }} {{ .detail }} Read {{ $post.Params.short_title | default $post.Title }}">
+        <span class="insight-cover insight-cover-finding"><span class="insight-cover-headline">{{ .headline }}</span><span class="insight-cover-detail">{{ .detail }}</span></span>
+      </a>
+    {{ else }}
     {{ with .Params.preview_stat }}
       <a class="insight-image" href="{{ $post.RelPermalink }}" aria-label="Read {{ $post.Params.short_title | default $post.Title }}">
         <span class="insight-cover"><span class="insight-cover-kicker">{{ .kicker }}</span><span class="insight-cover-value">{{ .value }}</span><span class="insight-cover-label">{{ .label }}</span><span class="insight-cover-note">{{ .note }}</span></span>
@@ -23,6 +28,7 @@
           <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" draggable="false" alt="{{ $post.Params.preview_alt | default $post.Title }}">
         {{ end }}
       </a>
+    {{ end }}
     {{ end }}
     {{ end }}
   </article>

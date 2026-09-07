@@ -1,9 +1,7 @@
 ---
-preview_stat:
-  kicker: Wages & careers · China
-  value: "500M"
-  label: job postings analyzed
-  note: Recruitment data · 2015–2022
+preview_finding:
+  headline: "Starting pay\ncan mislead."
+  detail: "A higher starting salary can come with slower wage growth."
 preview_crop: [40, 430, 1010, 1110]
 preview_alt: "Scatterplot of programmer starting pay and wage growth across Chinese cities"
 preview_image: fig_9.png
@@ -13,7 +11,7 @@ deck: "Comparing wage growth across industries and cities through large-scale on
 subtitle: 
 
 # Summary for listings and search engines
-summary: This article discusses the potential of AI, specifically large language models like GPT-4, to replace various professions, with the highest susceptibility seen in jobs like translation, insurance underwriting, and playwrights. However, it also highlights that jobs requiring human skills that are innate or do not require deep learning are less likely to be replaced by AI, challenging the notion that higher labor costs and more complex tasks necessarily lead to higher AI substitution.
+summary: "Starting salaries alone can mislead career choices: advertised wage growth varies with experience, occupation, and city."
 
 # Link this post with a project
 projects: []

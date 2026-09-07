@@ -1,7 +1,9 @@
 ---
 preview_finding:
-  headline: "Tasks outlive jobs."
-  detail: "Entry routes shrink; experienced workers take on more."
+  value: "18.6%"
+  headline: "Jobs have new task mixes"
+  detail: "Share with changed task combinations, 2023–2026 (essay estimate)."
+  compact: false
 title: "Fewer Entry-Level Jobs, More Work for Experienced Workers"
 short_title: "Who does the work when entry-level jobs disappear?"
 deck: "Chinese job ads reveal shrinking entry routes and broader task bundles for experienced workers in the age of AI."

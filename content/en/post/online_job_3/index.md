@@ -1,7 +1,9 @@
 ---
 preview_finding:
-  headline: "Growth tracks\nAI exposure."
-  detail: "Higher experience premiums correlate with modeled AI exposure."
+  value: ">60%"
+  headline: "High-growth careers are more AI-exposed"
+  detail: "Mean modeled exposure where annual experience premiums exceed 20%."
+  compact: false
 preview_crop: [40, 290, 1000, 665]
 preview_alt: "Scatterplot of occupational pay and AI exposure in China"
 preview_image: fig_7.png

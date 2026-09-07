@@ -1,13 +1,15 @@
 ---
 preview_finding:
-  headline: "Starting pay\ncan mislead."
-  detail: "A higher starting salary can come with slower wage growth."
+  value: "≈32% vs ≈14%"
+  headline: "Starting pay can mislead"
+  detail: "Programmer wage growth per year of experience: Xi’an vs. Huizhou."
+  compact: true
 preview_crop: [40, 430, 1010, 1110]
 preview_alt: "Scatterplot of programmer starting pay and wage growth across Chinese cities"
 preview_image: fig_9.png
 title: "The Future of Professions: A Data-Driven Analysis of Wage Growth and Career Choices Across Cities and Industries"
 short_title: "Wages, cities, and career choices"
-deck: "Comparing wage growth across industries and cities through large-scale online recruitment data."
+deck: "Programmers in Xi’an start below Huizhou, but their estimated returns to experience are higher."
 subtitle: 
 
 # Summary for listings and search engines

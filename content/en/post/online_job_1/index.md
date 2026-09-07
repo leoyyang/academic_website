@@ -1,7 +1,9 @@
 ---
 preview_finding:
-  headline: "The wage dip\nis a mix effect."
-  detail: "The decline disappears when comparing like-for-like jobs."
+  value: "+RMB 2,385"
+  headline: "Pay rises when job mix is held constant"
+  detail: "Adjusted monthly advertised pay, 2015–2022."
+  compact: true
 title: "Exploring 500 Million Online Job Postings: An Introduction to Data and Methods"
 preview_image: fig_4.png
 preview_crop: [40, 370, 1000, 490]

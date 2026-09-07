@@ -1,5 +1,5 @@
 ---
-title: "性别认同，婚姻与女性劳动力供给: 教育与城乡差异的视角"
+title: "性别身份认同对女性劳动供给和家庭收入结构的影响——教育与城乡差异的视角"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -14,8 +14,8 @@ author_notes:
 # - "Equal contribution"
 - ""
 
-date: "2020-09-10T00:00:00Z"
-doi: ""
+date: "2021-09-01T00:00:00Z"
+doi: "10.13821/j.cnki.ceq.2021.05.10"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-09-10T00:00:00Z"
@@ -45,7 +45,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.sciencedirect.com/science/article/pii/B9780128135242000093'
+url_pdf: 'https://www.nsd.pku.edu.cn/docs/20211112145832355740.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''

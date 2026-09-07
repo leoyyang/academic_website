@@ -2,7 +2,7 @@
 title: "Fewer Entry-Level Jobs, More Work for Experienced Workers"
 short_title: "Who does the work when entry-level jobs disappear?"
 deck: "Chinese job ads reveal shrinking entry routes and broader task bundles for experienced workers in the age of AI."
-summary: "An English adaptation of Qin Chen's essay on AI and China's labor market: exposed occupations are contracting, their tasks persist, and experienced workers face broader responsibilities."
+summary: "Evidence from Chinese job ads shows how AI-exposed occupations are contracting while their tasks persist and experienced workers face broader responsibilities."
 date: "2026-08-30T11:21:37+08:00"
 lastmod: "2026-09-07T00:00:00+08:00"
 publishDate: "2026-09-07T00:00:00+08:00"
@@ -10,6 +10,7 @@ draft: false
 featured: true
 authors:
   - Qin Chen
+  - Leo Yang
 tags:
   - Labor Market
   - Artificial Intelligence
@@ -27,8 +28,6 @@ image:
   caption: ""
   preview_only: true
 ---
-
-*An English adaptation of [Qin Chen’s August 30, 2026 essay for 城市数据团 (City Data Group)](https://mp.weixin.qq.com/s/iL3lbLcqlOdEl1xcWQCiOA), based on the team’s joint research. Original figures are accompanied by English captions.*
 
 For more than three years, the debate about large language models has revolved around what they *might* do to work. Will they create opportunities or eliminate jobs? Will they amplify expertise or make specialist skills available to everyone? Will younger workers benefit, or will experience become more valuable?
 
@@ -166,10 +165,4 @@ For a young applicant, that can mean fewer places to begin. For an experienced w
 
 AI can expand an individual's capabilities while making that individual more dependent on shared technological infrastructure. The first generation of these digital “Crusoes” will still live in a society built on the work of others.
 
-## Sources and editorial notes
-
-- **Original article:** Qin Chen (chenqin), [不再被需要的年轻人，和替他们干活的中登](https://mp.weixin.qq.com/s/iL3lbLcqlOdEl1xcWQCiOA), 城市数据团, August 30, 2026. All 14 figures above are reproduced from the supplied article; their Chinese labels and numerical values are unchanged. English captions were added for this edition.
-- **Research:** Qin Chen, Ying Fang, Xiangyu Wang, and Leo Yang, [The Pulse Beneath the Job Title: Monthly Readings of Requirements and Tasks from 750 Million Chinese Job Ads](/publication/job_ads_pulse/). [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7358820) · [arXiv](https://arxiv.org/abs/2608.26924).
-- **Data versions:** The original essay describes roughly 740 million ads through August 2026. The August 27 arXiv version reports 752.6 million ads from January 2022 through June 2026 and uses analysis-specific windows and platform samples. Those descriptions are not interchangeable; this adaptation retains the essay's figures rather than silently substituting the paper's sample or coefficients.
-- **Acknowledgment:** The original credits Leo Yang of Hong Kong Baptist University for the data and Professor Yan Shen of Peking University for the *Modern Times* and *Robinson Crusoe* metaphors.
-- **Translation choices:** The colloquial title contrasts young people with established mid-career workers. Here, the contrast is expressed through entry-level jobs and experienced workers; it should not be mistaken for a direct estimate by age. The long passage from Adam Smith is condensed, and speculative claims about the end of specialization are presented as arguments rather than established outcomes.
+For a fuller, more formal treatment of the results presented here, see our working paper, [The Pulse Beneath the Job Title: Monthly Readings of Requirements and Tasks from 750 Million Chinese Job Ads](/publication/job_ads_pulse/).

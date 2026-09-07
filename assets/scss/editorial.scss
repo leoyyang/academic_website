@@ -124,7 +124,8 @@ html[lang="en-us"], html[lang^="zh"] {
   .talk-group > h3 { padding-top: 14px; text-transform: none; letter-spacing: 0; font-family: 'Newsreader', serif; font-size: 24px; font-weight: 400; }
   .talk-upcoming { margin-bottom: 12px; }
   .talk-row { padding: 14px 26px; border-left: 3px solid transparent; }
-  .talk-upcoming .talk-row { background: var(--card); border-radius: 16px; border-left-color: var(--accent); }
+  .talk-upcoming .talk-items { background: var(--card); border-radius: 16px; border-left: 3px solid var(--accent); overflow: hidden; }
+  .talk-upcoming .talk-row { border-left: 0; }
   .talk-row h4 { font-size: 16px; font-weight: 600; line-height: 1.45; }
   .talk-row time { font-size: 12px; }
   .talk-row p { font-size: 12px; }

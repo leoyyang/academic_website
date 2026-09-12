@@ -49,20 +49,8 @@
     {{ end }}
     
     {{/* Buttons */}}
-    {{ if or $item.Params.links $item.Params.podcast }}
+    {{ if $item.Params.links }}
     <div class="publication-links">
-      {{/* Podcast Button - Always First */}}
-      {{ if $item.Params.podcast }}
-      <button class="btn btn-outline-primary btn-sm publication-btn podcast-btn" 
-              data-podcast-en="{{ if $item.Params.podcast.en }}{{ $item.RelPermalink }}{{ $item.Params.podcast.en }}{{ end }}"
-              data-podcast-zh="{{ if $item.Params.podcast.zh }}{{ $item.RelPermalink }}{{ $item.Params.podcast.zh }}{{ end }}"
-              data-title="{{ $item.Title }}"
-              aria-label="Quick listen to audio summary">
-        <i class="fas fa-podcast podcast-icon" aria-hidden="true"></i>
-        Quick Listen
-      </button>
-      {{ end }}
-      
       {{/* Other Buttons */}}
       {{ range $item.Params.links }}
       <a class="btn btn-outline-primary btn-sm publication-btn" href="{{ .url | relURL }}" target="_blank" rel="noopener">

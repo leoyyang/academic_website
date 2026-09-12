@@ -1,14 +1,7 @@
 {{ $page := . }}
 {{ $links := slice }}
 {{ $seen := slice }}
-{{ $pdf := .Params.url_pdf | default "" }}
-{{ with .Resources.GetMatch "index.pdf" }}{{ $pdf = .RelPermalink }}{{ end }}
-{{ if $pdf }}
-  {{ with .Resources.GetMatch $pdf }}{{ $pdf = .RelPermalink }}{{ end }}
-  {{ $pdf = $pdf | relURL }}
-  {{ $label := "PDF" }}{{ if and (ne site.Language.Lang "zh") (not (strings.HasSuffix (lower $pdf) ".pdf")) }}{{ $label = "Read chapter" }}{{ end }}
-  {{ $links = $links | append (dict "url" $pdf "name" $label) }}{{ $seen = $seen | append $pdf }}
-{{ end }}
+{{/* Direct paper PDF downloads are intentionally omitted from the resource UI. */}}
 {{ range slice (dict "key" "url_code" "name" "Code") (dict "key" "url_dataset" "name" "Data") (dict "key" "url_slides" "name" "Slides") (dict "key" "url_video" "name" "Video") }}
   {{ $label := .name }}
   {{ with index $page.Params .key }}
@@ -25,6 +18,12 @@
     {{ $links = $links | append (dict "url" $url "name" $name "icon" (.icon | default "") "icon_pack" (.icon_pack | default "")) }}{{ $seen = $seen | append $url }}
   {{ end }}
 {{ end }}
+{{ $visibleLinks := slice }}
+{{ range $links }}
+  {{ if and (ne (lower .name) "pdf") (not (findRE `(?i)\.pdf(?:[?#/]|$)` .url)) }}{{ $visibleLinks = $visibleLinks | append . }}{{ end }}
+{{ end }}
+{{ with $visibleLinks }}
 <div class="paper-links" aria-label="{{ partial "english/ui-text.html" "Paper resources" }}">
-  {{ range $links }}<a class="resource-link" href="{{ .url }}">{{ partial "english/resource-icon.html" . }}{{ partial "english/ui-text.html" .name }}</a>{{ end }}
+  {{ range . }}<a class="resource-link" href="{{ .url }}">{{ partial "english/resource-icon.html" . }}{{ partial "english/ui-text.html" .name }}</a>{{ end }}
 </div>
+{{ end }}

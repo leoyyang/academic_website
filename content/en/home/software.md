@@ -17,6 +17,8 @@ active: true
 # The tools/datasets shown as cards.
 tools:
   - name: ReproAI
+    brief: "Prepare clearer replication packages with an AI assistant."
+    preview_domain: "reproai.org"
     access: Open source
     related: ai_reproducibility
     logo: reproai
@@ -33,6 +35,8 @@ tools:
         icon: github
 
   - name: China Gazetteer
+    brief: "Search 3,000+ county gazetteers and turn historical records into research data."
+    preview_domain: "cngazetteer.com"
     access: Online database
     logo: gazetteer
     tagline: Full-text data · China
@@ -44,6 +48,8 @@ tools:
         icon: globe
 
   - name: Chinese Job Market Tracker
+    brief: "Explore recorded job-posting trends across Chinese recruitment platforms."
+    preview_domain: "leoyang.org/job-tracker"
     access: Public dashboard · Raw data on request
     related: job_ads_pulse
     logo: tracker

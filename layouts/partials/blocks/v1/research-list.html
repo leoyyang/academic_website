@@ -1,5 +1,5 @@
 <div data-research-list>
-  <div class="section-topline"><div><h2>{{ .wcBlock.Title }}</h2></div><a class="section-link" href="{{ "/publication/" | relLangURL }}">{{ partial "english/ui-text.html" "Full research archive" }} <span aria-hidden="true">→</span></a></div>
+  <div class="section-topline chapter-heading"><div>{{ partial "english/section-label.html" (dict "number" "01" "label" "Research & publications") }}<h2>{{ .wcBlock.Title }}</h2></div><a class="section-link" href="{{ "/publication/" | relLangURL }}">{{ partial "english/ui-text.html" "Full research archive" }} <span aria-hidden="true">→</span></a></div>
   {{ if ne site.Language.Lang "zh" }}<div class="research-filters" role="group" aria-label="Filter research by topic" hidden>
     <button type="button" data-topic="all" aria-pressed="true">All</button><button type="button" data-topic="Media" aria-pressed="false">Political economy</button><button type="button" data-topic="Labor" aria-pressed="false">Labor markets</button><button type="button" data-topic="GenAI" aria-pressed="false">AI & research methods</button>
   </div>

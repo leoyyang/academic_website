@@ -57,3 +57,56 @@ html[lang="en-us"] {
     .insight-cover-value { font-size: 44px; }
   }
 }
+
+// Ansyn-inspired editorial details: local preview, September 2026.
+html[lang="en-us"] {
+  --meta-font: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  .chapter-heading { align-items: flex-end; padding-top: 16px; border-top: 1px solid var(--line); margin-bottom: 0; }
+  .section-index { display: flex; align-items: center; gap: 10px; margin: 0 0 16px; color: var(--muted); font: 10px/1.6 var(--meta-font); text-transform: uppercase; letter-spacing: .09em; }
+  .section-index > span:first-child { color: var(--accent); font-size: 12px; }
+  .section-index-rule { width: 24px; height: 1px; background: var(--line); }
+  .section-context { margin: 0 0 3px; font-size: 12px; color: var(--muted); }
+  .chapter-heading .section-link { margin-bottom: 3px; }
+  .insight-row time, .talk-row time { font-family: var(--meta-font); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .tool-list.tool-gallery { grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-rows: auto; gap: 24px; align-items: start; }
+  .tool-gallery .research-tool { grid-column: auto; grid-row: auto; border-radius: 0; min-width: 0; }
+  .tool-preview { display: block; overflow: hidden; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; background: var(--page); text-decoration: none; }
+  .tool-preview img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; transition: transform 320ms var(--motion-out); }
+  .tool-preview-caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 10px; position: relative; padding: 9px 10px; background: var(--page); border-top: 1px solid var(--line); font: 9px/1.5 var(--meta-font); }
+  .tool-preview:hover, .tool-preview:focus-visible { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+  .tool-preview:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .tool-overview { padding: 18px 0 0; }
+  .tool-overview .eyebrow { min-height: 16px; margin: 0 0 10px; font: 10px/1.6 var(--meta-font); color: var(--muted); letter-spacing: .025em; text-transform: none; }
+  .tool-overview h3 { min-height: 66px; margin: 0 0 12px; font: 400 30px/1.1 'Newsreader',serif; letter-spacing: -.02em; }
+  .tool-brief { min-height: 70px; margin: 0 0 14px; color: var(--ink); font-size: 14px; line-height: 1.65; }
+  .tool-details { margin: 0 0 14px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .tool-details summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; cursor: pointer; list-style: none; min-height: 44px; color: var(--muted); font-size: 12px; }
+  .tool-details summary::-webkit-details-marker { display: none; }
+  .tool-details summary > span { color: var(--accent); font-size: 20px; transition: transform 180ms ease; }
+  .tool-details[open] summary > span { transform: rotate(45deg); }
+  .tool-details summary:hover, .tool-details summary:focus-visible { color: var(--accent); }
+  .tool-details summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .tool-details > div { padding: 4px 0 12px; }
+  .tool-details p { font-size: 13px; line-height: 1.7; margin: 0 0 8px; }
+  .tool-details .tool-access { padding-top: 0; margin: 0; }
+  .tool-gallery .resource-link { font-size: 11px; min-height: 36px; }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) { .tool-preview:hover img { transform: scale(1.045); } }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .tool-list.tool-gallery { gap: 18px; }
+    .tool-overview h3 { font-size: 26px; min-height: 58px; }
+    .tool-brief { min-height: 70px; }
+    .tool-preview-caption { min-height: 50px; }
+  }
+  @media (max-width: 767px) {
+    .section-index { font-size: 9px; margin-bottom: 12px; }
+    .chapter-heading { align-items: flex-start; }
+    .section-context { display: none; }
+    .tool-list.tool-gallery { grid-template-columns: 1fr; gap: 32px; }
+    .tool-overview h3 { min-height: 0; font-size: 30px; }
+    .tool-brief { min-height: 0; }
+    .tool-gallery .resource-link { min-height: 44px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tool-preview img, .tool-details summary > span { transition: none; }
+  }
+}

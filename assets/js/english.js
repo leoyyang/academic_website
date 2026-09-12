@@ -51,30 +51,57 @@
     reducedMotion.addEventListener('change', event => { if (event.matches) stopMotion(); });
     document.addEventListener('visibilitychange', () => { if (document.hidden) stopMotion(); });
 
-    // Establish the first-screen hierarchy without hiding readable content.
-    document.querySelectorAll('.intro-heading,.portrait-frame,.intro-research h2').forEach((element, index) => {
-      animate(element, [{ opacity: .6, transform: 'translateY(10px)' }, { opacity: 1, transform: 'translateY(0)' }],
-        { duration: 360, delay: index * 45 });
-    });
-    // Reveal the software and chart surfaces once, while keeping no-JS content visible.
+    // Start entrance motion only after the page is visible and its first paint is ready.
+    // Background-tab observations must not consume an entrance the reader never sees.
+    const english = document.documentElement.lang.startsWith('en');
+    let entrancesReady = false;
+    const inView = new Set();
+    const entered = new WeakSet();
+    const revealVisible = () => {
+      if (!entrancesReady || document.hidden) return;
+      let index = 0;
+      inView.forEach(element => {
+        if (entered.has(element)) return;
+        entered.add(element);
+        if (keyboardInput || reducedMotion.matches) return;
+        animate(element,
+          [{ opacity: english ? 0 : .55, transform: `translateY(${english ? 22 : 12}px)` },
+           { opacity: 1, transform: 'translateY(0)' }],
+          { duration: english ? 560 : 380, delay: Math.min(index++, 3) * (english ? 90 : 45), fill: 'backwards' });
+      });
+    };
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver(entries => {
-        let index = 0;
         entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          observer.unobserve(entry.target);
-          if (!keyboardInput) animate(entry.target,
-            [{ opacity: .55, transform: 'translateY(12px)' }, { opacity: 1, transform: 'translateY(0)' }],
-            { duration: 380, delay: index++ * 45 });
+          if (entry.isIntersecting && entry.intersectionRatio >= .12) inView.add(entry.target);
+          else if (!entry.isIntersecting) {
+            inView.delete(entry.target);
+            // Re-arm only once the surface has completely left the viewport.
+            if (english) entered.delete(entry.target);
+          }
         });
-      }, { threshold: .12 });
-      document.querySelectorAll('.research-tool,.insight-image').forEach(card => observer.observe(card));
+        revealVisible();
+      }, { threshold: [0, .12] });
+      const targets = '.intro-heading,.portrait-frame,.intro-research h2,.research-tool,.insight-image,.chapter-heading';
+      document.querySelectorAll(targets).forEach(element => observer.observe(element));
     }
+    const startEntrances = () => {
+      if (document.hidden) return;
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        entrancesReady = true;
+        revealVisible();
+      }));
+    };
+    if (document.readyState === 'complete') startEntrances();
+    else window.addEventListener('load', startEntrances, { once: true });
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && document.readyState === 'complete') startEntrances();
+    });
 
     // Native disclosures remain available without JS. Pointer actions animate height;
     // keyboard, reduced-motion and background-tab actions settle immediately.
     const disclosureSettlers = new Set();
-    document.querySelectorAll('.paper-abstract,.paper-audio').forEach(details => {
+    document.querySelectorAll('.paper-abstract,.paper-audio,.tool-details').forEach(details => {
       const summary = details.querySelector('summary');
       let opening, wanted = details.open;
       const finish = () => {

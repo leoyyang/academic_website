@@ -1,4 +1,4 @@
-<div class="section-topline"><div><h2>Data Insights</h2></div><a class="section-link" href="/post/">All insights <span aria-hidden="true">→</span></a></div>
+<div class="section-topline chapter-heading"><div>{{ partial "english/section-label.html" (dict "number" "03" "label" "Evidence & perspectives") }}<h2>Data Insights</h2></div><a class="section-link" href="/post/">All insights <span aria-hidden="true">→</span></a></div>
 <div class="insight-carousel" role="region" aria-roledescription="carousel" aria-label="Data Insights articles">
 <div class="insight-list" id="insight-track" tabindex="0" aria-label="Articles; use left and right arrow keys to browse">
 {{ range (where site.RegularPages "Section" "post").ByDate.Reverse }}

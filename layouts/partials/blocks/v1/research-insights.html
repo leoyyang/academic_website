@@ -7,7 +7,7 @@
     <div><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time><h3><a href="{{ .RelPermalink }}">{{ .Params.short_title | default .Title }}</a></h3><p>{{ .Params.deck | default .Params.summary }}</p></div>
     {{ with .Params.preview_finding }}
       <a class="insight-image" href="{{ $post.RelPermalink }}" aria-label="{{ .value }} {{ .headline }} {{ .detail }} Read {{ $post.Params.short_title | default $post.Title }}">
-        <span class="insight-cover insight-cover-finding">{{ with .value }}<span class="insight-finding-value{{ if $post.Params.preview_finding.compact }} insight-finding-value-compact{{ end }}">{{ . }}</span>{{ end }}<span class="insight-cover-headline">{{ .headline }}</span><span class="insight-cover-detail">{{ .detail }}</span></span>
+        <span class="insight-cover insight-cover-finding{{ if $post.Params.preview_chart }} has-finding-chart{{ end }}">{{ with .value }}<span class="insight-finding-value{{ if $post.Params.preview_finding.compact }} insight-finding-value-compact{{ end }}">{{ . }}</span>{{ end }}<span class="insight-cover-headline">{{ .headline }}</span><span class="insight-cover-detail">{{ .detail }}</span>{{ partial "english/insight-chart.html" $post }}</span>
       </a>
     {{ else }}
     {{ with .Params.preview_stat }}

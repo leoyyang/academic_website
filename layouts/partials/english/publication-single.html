@@ -5,7 +5,8 @@
   {{ partial "english/paper-links.html" . }}
   {{ if or (ne site.Language.Lang "zh") (ne .Params.summary .Params.abstract) }}{{ with .Params.summary }}<div class="paper-takeaway"><p class="eyebrow">{{ partial "english/ui-text.html" "At a glance" }}</p><p>{{ . | markdownify }}</p></div>{{ end }}{{ end }}
   {{ with .Params.abstract }}<section class="full-abstract"><h2>{{ partial "english/ui-text.html" "Abstract" }}</h2><div>{{ . | markdownify }}</div></section>{{ end }}
-  {{ with .Params.related_tool }}<aside class="related-resource"><span>{{ partial "english/ui-text.html" "Related research tool" }}</span><a href="{{ .url }}">{{ .name }} ↗</a></aside>{{ end }}
+  {{ if ne .Language.Lang "en" }}{{ with .Params.related_tool }}<aside class="related-resource"><span>{{ partial "english/ui-text.html" "Related research tool" }}</span><a href="{{ .url }}">{{ .name }} ↗</a></aside>{{ end }}{{ end }}
   {{ with .Params.podcast }}<details class="audio-summary"><summary>{{ partial "english/ui-text.html" "Listen to an audio summary" }}</summary><div class="audio-options">{{ range $lang, $src := . }}<div><p>{{ if eq $lang "en" }}English{{ else if eq $lang "zh" }}中文{{ else }}{{ $lang }}{{ end }}</p><audio controls preload="none" src="{{ $.RelPermalink }}{{ $src }}">Your browser does not support audio. <a href="{{ $.RelPermalink }}{{ $src }}">Download audio</a></audio></div>{{ end }}</div></details>{{ end }}
   <div class="article-style">{{ .Content }}</div>
+  {{ partial "english/continue-exploring.html" . }}
 </main>

@@ -1,0 +1,11 @@
+{{ with .Params.preview_chart }}
+<span class="finding-chart" aria-hidden="true">
+{{ if eq .type "share" }}
+  <span class="chart-caption">{{ .label }}</span><span class="chart-track"><span class="chart-fill" style="width: {{ .value }}%"></span></span>
+{{ else if eq .type "comparison" }}
+  {{ $max := float .maximum }}
+  {{ range .bars }}<span class="chart-comparison-row"><span>{{ .label }}</span><span class="chart-track"><span class="chart-fill" style="width: {{ mul 100 (div (float .value) $max) }}%"></span></span><span>{{ .display }}</span></span>{{ end }}
+  <span class="chart-caption">{{ .label }}</span>
+{{ end }}
+</span>
+{{ end }}

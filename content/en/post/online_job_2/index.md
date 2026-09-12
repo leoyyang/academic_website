@@ -1,4 +1,12 @@
 ---
+preview_chart:
+  type: comparison
+  maximum: 40
+  label: "Annual experience premium · 0–40%"
+  bars:
+    - {label: "Xi’an", value: 32, display: "≈32%"}
+    - {label: "Huizhou", value: 14, display: "≈14%"}
+insight_topic: "Wages & careers"
 preview_finding:
   value: "≈32% vs ≈14%"
   headline: "Starting pay can mislead"

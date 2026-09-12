@@ -1,4 +1,9 @@
 ---
+preview_chart:
+  type: share
+  value: 18.6
+  label: "Share of jobs · 0–100%"
+insight_topic: "AI & work"
 preview_finding:
   value: "18.6%"
   headline: "Jobs have new task mixes"

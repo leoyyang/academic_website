@@ -1,0 +1,50 @@
+resources:
+  pulse:
+    page: publication/job_ads_pulse
+    kind: Working paper
+    title: The Pulse Beneath the Job Title
+    description: How job requirements and tasks change beneath occupational titles.
+  entry_work:
+    page: post/ai-entry-level-work
+    kind: Data insight
+    title: Who does the work when entry-level jobs disappear?
+    description: Entry-level roles shrink while experienced workers take on broader responsibilities.
+  tracker:
+    page: job-tracker
+    kind: Interactive data
+    title: Chinese Job Market Tracker
+    description: Compare recorded posting trends across recruitment platforms.
+  job_methods:
+    page: post/online_job_1
+    kind: Data insight
+    title: Inside 500 million job postings
+    description: How we classify occupations and make job ads comparable.
+  job_wages:
+    page: post/online_job_2
+    kind: Data insight
+    title: Wages, cities, and career choices
+    description: Why experience and location change advertised wage growth.
+  job_ai:
+    page: post/online_job_3
+    kind: Data insight
+    title: AI exposure across Chinese occupations
+    description: Which occupational tasks are most exposed to language models?
+  repro_paper:
+    page: publication/ai_reproducibility
+    kind: Working paper
+    title: Scaling Reproducibility
+    description: An AI-assisted workflow for large-scale replication and reanalysis.
+  repro_tool:
+    url: /#tool-reproai
+    kind: Research software
+    title: ReproAI
+    description: Prepare a clearer replication package with an author-facing AI plugin.
+
+pages:
+  publication/job_ads_pulse: [entry_work, tracker]
+  publication/ai_reproducibility: [repro_tool]
+  post/ai-entry-level-work: [pulse, tracker]
+  post/online_job_1: [job_wages, job_ai, tracker]
+  post/online_job_2: [job_methods, job_ai, tracker]
+  post/online_job_3: [entry_work, pulse, tracker]
+  job-tracker: [pulse, entry_work]

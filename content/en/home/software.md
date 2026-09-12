@@ -19,6 +19,9 @@ tools:
   - name: ReproAI
     brief: "Prepare clearer replication packages with an AI assistant."
     preview_domain: "reproai.org"
+    preview_animation: reproai-detail
+    preview_image: reproai-detail.png
+    preview_label: Workflow preview
     access: Open source
     related: ai_reproducibility
     logo: reproai
@@ -37,6 +40,8 @@ tools:
   - name: China Gazetteer
     brief: "Search 3,000+ county gazetteers and turn historical records into research data."
     preview_domain: "cngazetteer.com"
+    preview_image: gazetteer-detail.png
+    preview_label: Database overview
     access: Online database
     logo: gazetteer
     tagline: Full-text data · China
@@ -50,6 +55,10 @@ tools:
   - name: Chinese Job Market Tracker
     brief: "Explore recorded job-posting trends across Chinese recruitment platforms."
     preview_domain: "leoyang.org/job-tracker"
+    preview_animation: tracker-detail
+    preview_image: tracker-detail.png
+    preview_label: Dashboard preview
+    insight: ai-entry-level-work
     access: Public dashboard · Raw data on request
     related: job_ads_pulse
     logo: tracker

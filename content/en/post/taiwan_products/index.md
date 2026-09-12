@@ -1,4 +1,5 @@
 ---
+insight_topic: "Trade & supply chains"
 preview_finding:
   value: "81"
   headline: "Product groups face concentrated supply"

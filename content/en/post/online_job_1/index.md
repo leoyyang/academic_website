@@ -1,4 +1,5 @@
 ---
+insight_topic: "Labor market data"
 preview_finding:
   value: "+RMB 2,385"
   headline: "Pay rises when job mix is held constant"

@@ -64,6 +64,10 @@
         if (entered.has(element)) return;
         entered.add(element);
         if (keyboardInput || reducedMotion.matches) return;
+        element.querySelectorAll('.chart-fill').forEach((bar, barIndex) => {
+          animate(bar, [{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
+            { duration: 650, delay: 140 + barIndex * 70, fill: 'backwards' });
+        });
         animate(element,
           [{ opacity: english ? 0 : .55, transform: `translateY(${english ? 22 : 12}px)` },
            { opacity: 1, transform: 'translateY(0)' }],
@@ -82,7 +86,7 @@
         });
         revealVisible();
       }, { threshold: [0, .12] });
-      const targets = '.intro-heading,.portrait-frame,.intro-research h2,.research-tool,.insight-image,.chapter-heading';
+      const targets = '.intro-heading,.portrait-frame,.intro-research h2,.research-tool,.insight-image,.chapter-heading,.closing-main';
       document.querySelectorAll(targets).forEach(element => observer.observe(element));
     }
     const startEntrances = () => {
@@ -277,6 +281,7 @@
       audio.addEventListener('play', () => document.querySelectorAll('audio').forEach(other => { if (other !== audio) other.pause(); }));
       audio.closest('details')?.addEventListener('toggle', event => { if (!event.target.open) audio.pause(); });
     });
+
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

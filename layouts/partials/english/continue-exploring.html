@@ -1,0 +1,23 @@
+{{ if eq .Language.Lang "en" }}
+{{ $connections := site.Data.research_connections }}
+{{ $key := strings.TrimSuffix "/" (strings.TrimPrefix "/" .RelPermalink) }}
+{{ with index $connections.pages $key }}
+<aside class="continue-exploring" aria-labelledby="explore-heading">
+  <h2 id="explore-heading">Continue exploring</h2>
+  <div class="explore-grid">
+  {{ range . }}
+    {{ $item := index $connections.resources . }}
+    {{ $url := $item.url }}
+    {{ with $item.page }}{{ with site.GetPage . }}{{ $url = .RelPermalink }}{{ end }}{{ end }}
+    {{ with $url }}
+    <a class="explore-link" href="{{ . }}">
+      <span class="explore-kind">{{ $item.kind }}</span>
+      <span class="explore-title">{{ $item.title }} <span aria-hidden="true">↗</span></span>
+      <span class="explore-description">{{ $item.description }}</span>
+    </a>
+    {{ end }}
+  {{ end }}
+  </div>
+</aside>
+{{ end }}
+{{ end }}

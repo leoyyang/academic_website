@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ if eq site.Language.Lang "en" }}
+<main class="insights-archive" id="main-content">
+<header class="archive-heading"><p class="section-index">Evidence & perspectives</p><h1>Data Insights</h1><p class="archive-intro">Evidence on work, technology, and economic life.</p></header>
+<div class="archive-legend"><span>Latest first</span><span>{{ len .RegularPages }} articles</span></div>
+{{ range .RegularPages.ByDate.Reverse }}
+<article class="archive-entry">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+  <div class="archive-copy"><p class="archive-topic">{{ .Params.insight_topic | default (delimit .Params.tags " · ") }}</p><h2><a href="{{ .RelPermalink }}">{{ .Params.short_title | default .Title }}</a></h2><p>{{ .Params.deck | default .Params.summary }}</p><a class="archive-read" href="{{ .RelPermalink }}">Read article <span aria-hidden="true">↗</span></a></div>
+  {{ with .Params.preview_finding }}<div class="archive-finding"><span>{{ .value }}</span><p>{{ .headline }}</p><small>{{ .detail }}</small></div>{{ end }}
+</article>
+{{ end }}
+</main>
+{{ else }}
+
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper">
+  {{ with .Content }}
+    <div class="article-style">{{ . }}</div>
+  {{ end }}
+
+
+  {{ if templates.Exists (printf "partials/views/%s-start.html" (lower $.Params.view | default "compact")) }}
+    {{ partial "functions/render_view" (dict "page" $ "item" . "view" (printf "%s-start" $.Params.view) "index" 0) }}
+  {{ end }}
+
+  {{ $paginator := .Paginate .Pages }}
+  {{ range $index, $post := $paginator.Pages }}
+    {{ partial "functions/render_view" (dict "page" $ "item" . "view" ($.Params.view | default "compact") "index" $index) }}
+  {{end}}
+
+  {{ if templates.Exists (printf "partials/views/%s-end.html" (lower $.Params.view | default "compact")) }}
+    {{ partial "functions/render_view" (dict "page" $ "item" . "view" (printf "%s-end" $.Params.view) "index" 0) }}
+  {{ end }}
+
+  {{ partial "pagination" . }}
+</div>
+
+
+
+{{ end }}
+{{ end }}

@@ -1,4 +1,5 @@
 ---
+insight_topic: "AI exposure"
 preview_finding:
   value: ">60%"
   headline: "High-growth careers are more AI-exposed"

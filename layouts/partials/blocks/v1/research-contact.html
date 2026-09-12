@@ -1,0 +1,6 @@
+{{ $data := .wcBlock.Params.content }}
+<div class="contact-closing">
+  <div class="closing-top"><p class="closing-kicker">Contact · Hong Kong</p><a class="closing-back" href="#about">Back to top <span aria-hidden="true">↑</span></a></div>
+  <div class="closing-main"><h2>Let’s exchange<br><em>ideas.</em></h2><div class="closing-action"><p>Research, conversations, and collaboration.</p><a class="closing-email" href="mailto:{{ $data.email }}">{{ $data.email }} <span aria-hidden="true">↗</span></a></div></div>
+  <div class="closing-bottom"><span>School of Business · Hong Kong Baptist University</span><address>{{ $data.address.street }}<br>{{ $data.address.city }}, {{ $data.address.region }}, {{ $data.address.country }}</address></div>
+</div>

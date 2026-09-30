@@ -27,7 +27,7 @@ publishDate: "2026-05-20T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-# publication: Working Paper
+publication: "NeurIPS 2026 Workshop on Interpretability for Discovery"
 # publication_short: Working Paper
 
 abstract: "Interpretable text representations should expose coordinates that are not only predictive, but also meaningful enough for independent auditors to apply. Existing discriminative representations often use anonymous embedding directions, while concept-bottleneck and LLM-assisted methods attach natural-language names to features without ensuring that those definitions are reproducible or distinct from the target label. We propose an operational criterion for interpretable discriminative text representations: each coordinate should satisfy conceptual clarity, measured by chance-adjusted agreement between independent annotators applying the feature definition, and label disentanglement, meaning the feature should not merely paraphrase the prediction target. We instantiate this criterion in LLM-assisted Feature Discovery (LFD), an iterative method that proposes lexical and semantic features from contrastive outcome-opposed text pairs, screens candidates using cross-LLM Cohen's κ, and selects features by residual held-out predictive gain. A stylized analysis connects the κ screen to a per-feature annotation-noise bound, formalizing agreement as a reliability check. Across ten text-classification tasks spanning seven corpora, LFD matches the predictive performance of a strong text bottleneck baseline while producing substantially clearer and less label-entangled features. Human audits with 232 raters show that LFD features achieve higher human--human and human--LLM agreement than baseline concepts, and raters consistently judge them as less label-leaking. These results suggest that agreement-tested, label-disentangled coordinates provide a practical auditability standard for interpretable text classification."
@@ -46,6 +46,8 @@ links:
   url: "https://arxiv.org/abs/2605.20693"
   icon_pack: "ai"
   icon: "arxiv"
+- name: "Interp4Discovery"
+  url: "https://interpretability4discovery.github.io/"
 
 url_pdf: ''
 url_code: ''
@@ -78,3 +80,5 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+Workshop version: *“Agreement-Tested Coordinates: When Named Features Can Support Discovery, and When They Cannot.”*

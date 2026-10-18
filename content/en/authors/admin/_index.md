@@ -72,4 +72,4 @@ highlight_name: true
 
 Leo Y. Yang is a Ph.D. candidate in Political Science at the University of California, San Diego (UCSD). His research interests include computational social science, political economy, and development economics. His work focus on how does the media (like newspaper and Weibo) influences economic, social, and political issues. He is trained as a data scientist who is capable of collecting, cleaning, and using big data to analyze the social phenomenon.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf?v=20261016-27e0207" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf?v=20261018-74225df" "newtab" >}}resumé{{< /staticref >}}.

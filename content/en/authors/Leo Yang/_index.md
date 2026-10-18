@@ -69,7 +69,7 @@ social:
 # and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: uploads/resume.pdf?v=20261016-27e0207
+  link: uploads/resume.pdf?v=20261018-74225df
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -84,4 +84,4 @@ I hold a Ph.D. in Political Science with a specialization in Computational Socia
 
 In addition to my current role, I am a faculty affiliate of the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)) and UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)).
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf?v=20261016-27e0207" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf?v=20261018-74225df" "newtab" >}}resumé{{< /staticref >}}.

@@ -5,10 +5,9 @@
   </div>
   <p class="filter-result" role="status" aria-live="polite" hidden></p>{{ end }}
   {{ $papers := (where site.RegularPages "Section" "publication").ByDate.Reverse }}
-  {{ $forthcoming := where $papers "Params.publication_status" "forthcoming" }}
-  {{ $published := where (where $papers "Params.publication_status" "ne" "forthcoming") "Params.publication_types" "intersect" (slice "1" "2" "5" "6") }}
+  {{ $published := where $papers "Params.publication_types" "intersect" (slice "1" "2" "5" "6") }}
   {{ $working := where $papers "Params.publication_types" "intersect" (slice "3") }}
-  {{ range slice (dict "id" "forthcoming" "name" "Forthcoming" "papers" $forthcoming) (dict "id" "published" "name" "Published" "papers" $published) (dict "id" "working-papers" "name" "Working papers & projects" "papers" $working) }}
+  {{ range slice (dict "id" "published" "name" "Published" "papers" $published) (dict "id" "working-papers" "name" "Working papers & projects" "papers" $working) }}
   {{ if .papers }}<section id="{{ .id }}" class="research-group"><h2>{{ partial "english/ui-text.html" .name }}</h2>{{ range .papers }}{{ partial "english/paper.html" (dict "page" . "expandable" true) }}{{ end }}</section>{{ end }}
   {{ end }}
 </main>

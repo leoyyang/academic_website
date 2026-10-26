@@ -24,7 +24,6 @@ publication_types: ["2"]
 # Publication name and optional abbreviated publication name.
 publication: "Journal of Comparative Economics, forthcoming"
 publication_short: "Journal of Comparative Economics, forthcoming"
-publication_status: forthcoming
 
 abstract: How can authoritarian regimes discipline local bureaucrats without the machinery of democratic accountability? Linking 1,528 fatal coal-mine accidents in 311 Chinese prefectures (2003-2012) to 11,190 news articles and the career outcomes of 967 prefecture party secretaries, I document a striking asymmetry; career penalties arise when accidents are covered by media based outside the incumbent's own province, while local coverage has no detectable negative effect. The penalty concentrates on the advancement margin—reducing retirement and promotion rather than triggering formal removal—consistent with a cadre tournament in which visibility constrains upward mobility. A news-congestion instrument provides first-stage evidence for the mechanism; it shifts non-local coverage significantly more than local coverage, exactly the asymmetry the mechanism predicts. These findings identify which information channels enter the promotion technology of a decentralized authoritarian hierarchy; not aggregate media scrutiny, but specifically those channels structurally independent of the leaders they scrutinize. The contribution is about the institutional design of monitoring in centralized administrative systems, not about the welfare consequences of media exposure.
 

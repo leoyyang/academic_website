@@ -5,16 +5,7 @@
   </div>
   <p class="filter-result" role="status" aria-live="polite" hidden></p>{{ end }}
   <div class="research-years{{ if and (eq site.Language.Lang "zh") (eq (len (where (where site.RegularPages "Section" "publication") "Params.featured" true)) 2) }} research-years--paired{{ end }}">
-  {{ $papers := (where (where site.RegularPages "Section" "publication") "Params.featured" true).ByDate.Reverse }}
-  {{ with where $papers "Params.publication_status" "forthcoming" }}
-    <section class="research-group year-group" data-year="forthcoming" aria-label="Forthcoming research">
-      <h2 class="research-year">Forthcoming</h2>
-      <div class="year-papers">
-      {{ range . }}{{ partial "english/paper.html" (dict "page" . "expandable" true "compact" true) }}{{ end }}
-      </div>
-    </section>
-  {{ end }}
-  {{ range (where $papers "Params.publication_status" "ne" "forthcoming").GroupByDate "2006" }}
+  {{ range ((where (where site.RegularPages "Section" "publication") "Params.featured" true).ByDate.Reverse).GroupByDate "2006" }}
     <section class="research-group year-group" data-year="{{ .Key }}" aria-label="{{ if eq site.Language.Lang "zh" }}{{ .Key }} 年研究{{ else }}Research from {{ .Key }}{{ end }}">
       <h2 class="research-year">{{ .Key }}</h2>
       <div class="year-papers">

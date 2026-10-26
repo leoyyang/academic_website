@@ -32,7 +32,7 @@ en:
       - {name: 'Software & Data', url: '/#software', weight: 30}
       - {name: 'Data Insights', url: '/#posts', weight: 40}
       - {name: Talks, url: '/#talks', weight: 50}
-      - {name: CV, url: '/uploads/resume.pdf?v=20261018-74225df', weight: 60}
+      - {name: CV, url: '/uploads/leo_yang_cv_20261026.pdf', weight: 60}
 
 # Uncomment the lines below to configure your website in a second language.
 zh:

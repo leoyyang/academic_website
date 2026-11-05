@@ -1,5 +1,5 @@
 {{ $p := .page }}
-<article class="paper-row" data-paper data-topics="{{ delimit $p.Params.tags " " }}">
+<article class="paper-row" data-paper data-topics="{{ delimit ($p.Params.research_topics | default $p.Params.tags) " " }}">
   <div class="paper-heading">
   <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
   {{ partial "english/paper-meta.html" $p }}

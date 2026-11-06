@@ -19,7 +19,7 @@ bio: 杨阳是香港浸会大学商学院会计、经济与金融学系研究助
 research_summary: 我研究人工智能与数字技术如何重塑工作、政治制度和社会科学的研究实践。
 background:
 - 我于 2023 年获得加州大学圣迭戈分校政治学博士学位，专攻计算社会科学。此前，我先后获得香港科技大学社会科学哲学硕士学位（2016 年）、厦门大学王亚南经济研究院（WISE）金融学硕士学位（2014 年），以及厦门大学嘉庚学院经济学学士学位（2010 年）。
-- "我曾在斯坦福大学中国经济与制度研究中心（SCCEI）从事博士后研究，目前也是[斯坦福大学经济政策研究所（SIEPR）](https://siepr.stanford.edu/) 和[加州大学全球冲突与合作研究所（IGCC）](https://ucigcc.org/)的关联学者（faculty affiliate）。"
+- "我曾在斯坦福大学中国经济与制度研究中心（SCCEI）从事博士后研究，目前也是[斯坦福大学中国经济与制度研究中心（SCCEI）](https://sccei.fsi.stanford.edu/) 和[加州大学全球冲突与合作研究所（IGCC）](https://ucigcc.org/)的关联学者（faculty affiliate）。"
 
 # Interests to show in About widget
 interests:
@@ -85,4 +85,4 @@ highlight_name: true
 
 我于 2023 年获得加州大学圣迭戈分校政治学博士学位，专攻计算社会科学。此前，我先后获得香港科技大学社会科学哲学硕士学位（2016 年）、厦门大学王亚南经济研究院（WISE）金融学硕士学位（2014 年），以及厦门大学嘉庚学院经济学学士学位（2010 年）。
 
-我曾在斯坦福大学中国经济与制度研究中心（SCCEI）从事博士后研究，目前也是[斯坦福大学经济政策研究所（SIEPR）](https://siepr.stanford.edu/) 和[加州大学全球冲突与合作研究所（IGCC）](https://ucigcc.org/)的关联学者（faculty affiliate）。
+我曾在斯坦福大学中国经济与制度研究中心（SCCEI）从事博士后研究，目前也是[斯坦福大学中国经济与制度研究中心（SCCEI）](https://sccei.fsi.stanford.edu/) 和[加州大学全球冲突与合作研究所（IGCC）](https://ucigcc.org/)的关联学者（faculty affiliate）。

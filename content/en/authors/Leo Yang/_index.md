@@ -82,6 +82,6 @@ I am a Research Assistant Professor in the Department of Accountancy, Economics 
 
 I hold a Ph.D. in Political Science with a specialization in Computational Social Science from the University of California, San Diego ([UCSD](https://ucsd.edu/)), obtained in 2023. Before that, I earned an M.Phil. in Social Science from the Hong Kong University of Science and Technology ([HKUST](https://hkust.edu.hk/)) in 2016, an M.A. in Finance from the Wang Yanan Institute for Studies in Economics (WISE) at Xiamen University ([XMU](https://www.xmu.edu.cn/)) in 2014, and a B.A. in Economics from Tan Kah Kee College, Xiamen University, in 2010.
 
-In addition to my current role, I am a faculty affiliate of the Stanford Institute for Economic Policy Research ([SIEPR](https://siepr.stanford.edu/)) and UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)).
+In addition to my current role, I am a faculty affiliate of the Stanford Center on China’s Economy and Institutions ([SCCEI](https://sccei.fsi.stanford.edu/)) and UC Institute on Global Conflict and Cooperation ([IGCC](https://ucigcc.org)).
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/leo_yang_cv_20261105.pdf" "newtab" >}}resumé{{< /staticref >}}.

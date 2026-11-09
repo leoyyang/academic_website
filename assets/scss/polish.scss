@@ -212,3 +212,11 @@ html[lang="en-us"] {
 /* Keep the full official Certify workflow visible in the standard preview frame. */
 #tool-certify .tool-preview img { object-fit: contain; object-position: center; background: #fff; }
 @media (min-width: 768px) { .tool-list.tool-gallery:has(#tool-certify) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Compact tool cards without changing the two-column / single-column widths. */
+#software .tool-gallery .tool-overview { padding-top: 12px; }
+#software .tool-gallery .tool-overview .eyebrow { margin-bottom: 6px; }
+#software .tool-gallery .tool-overview h3 { min-height: 0; margin-bottom: 6px; }
+#software .tool-gallery .tool-brief { min-height: 0; margin-bottom: 10px; }
+#software .tool-gallery .tool-details { margin-bottom: 8px; }
+#software .tool-list.tool-gallery { row-gap: 20px; }

@@ -208,3 +208,7 @@ html[lang="en-us"] {
   }
   @media (prefers-reduced-motion: reduce) { .explore-link { transition: none; } }
 }
+
+/* Keep the full official Certify workflow visible in the standard preview frame. */
+#tool-certify .tool-preview img { object-fit: contain; object-position: center; background: #fff; }
+@media (min-width: 768px) { .tool-list.tool-gallery:has(#tool-certify) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

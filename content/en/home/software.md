@@ -37,6 +37,22 @@ tools:
         icon_pack: fab
         icon: github
 
+  - name: Certify
+    brief: "Create checkable evidence that deposited code reproduces reported results."
+    preview_domain: "certify.iq.harvard.edu"
+    preview_image: certify-workflow.png
+    preview_label: Certification workflow
+    access: Public beta
+    related: replication_certification
+    logo: certify
+    tagline: Replication certification · Public beta
+    desc: "Software that creates signed, timestamped records of a computational run, so authors, journals, and readers can check replication evidence without repeating the full analysis. Currently in public beta, with results temporarily stored on Demo Dataverse. Certification records what ran; it does not certify the scientific conclusions."
+    links:
+      - name: Website
+        url: "https://certify.iq.harvard.edu/"
+        icon_pack: fas
+        icon: globe
+
   - name: China Gazetteer
     brief: "Search 3,000+ county gazetteers and turn historical records into research data."
     preview_domain: "cngazetteer.com"

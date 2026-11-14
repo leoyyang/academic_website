@@ -1,5 +1,5 @@
 ---
-title: Nanjing University — Public Management Research Methods Lecture
+title: Public Management Research Methods Lecture
 slug: nanjing-university-2026
 event: Public Management Research Methods Lecture Series (Lecture 6)
 event_url: ""
